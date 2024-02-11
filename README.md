@@ -1,7 +1,7 @@
 # LeSTMovoz
  
-The LeSTMovoz is drop-in DIY replacement pcb for the [Lesovoz](https://trashman.wiki/community/pcbs/lesovoz) pcb by squash for minivan style cases.
-The replacement pcb adds a second 2u bottom row option by omitting one tray mount hole. Existing plates should work but said 2u option is not accounted for in original plates.  
+The LeSTMovoz is drop-in DIY replacement pcb for the [Lesovoz](https://trashman.wiki/community/pcbs/lesovoz) pcb by squash for [minivan](https://trashman.wiki/) style cases.
+The replacement pcb adds a second 2u bottom row option by omitting one tray mount hole. [Existing plates](https://www.minivanplate.xyz/) should work but said 2u option is not accounted for in original plates.  
 
 It uses mostly THT components to be added by hand, but production files exist to handle the few SMD components (STM32 mcu, logic shifter for rgb, 2 press buttons) with factory assembly.
 The most difficult part to solder by hand should be the USB port.

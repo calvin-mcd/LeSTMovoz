@@ -20,6 +20,7 @@ The most difficult part to solder by hand should be the USB port.
 - [ ] create firmware
 - [ ] update plate options on https://www.minivanplate.xyz/
 - [ ] test in different cases, with acrylic cover from the OG lesovoz
+- [ ] add full list for components and make a basic build guide
 
 ## Disclaimer
 

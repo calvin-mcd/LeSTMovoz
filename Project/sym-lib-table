@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "kbd")(type "Legacy")(uri "C:/Users/viva-/Documents/GitHub/libraries/kbd/kicad-symbols/kbd.lib")(options "")(descr ""))
+)

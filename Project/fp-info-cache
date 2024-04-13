@@ -1,4 +1,4 @@
-22055674791411317
+22157179597662115
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -60381,6 +60381,237 @@ Yellow 5381 Series LED
 0
 2
 2
+MX_Alps_Hybrid
+MX-Alps-Hybrid-1.5U
+
+
+0
+4
+2
+MX_Alps_Hybrid
+MX-Alps-Hybrid-1.25U
+
+
+0
+4
+2
+MX_Alps_Hybrid
+MX-Alps-Hybrid-1.75U
+
+
+0
+4
+2
+MX_Alps_Hybrid
+MX-Alps-Hybrid-1U
+
+
+0
+4
+2
+MX_Alps_Hybrid
+MX-Alps-Hybrid-2.25U
+
+
+0
+4
+2
+MX_Alps_Hybrid
+MX-Alps-Hybrid-2.25U-ReversedStabilizers
+
+
+0
+4
+2
+MX_Alps_Hybrid
+MX-Alps-Hybrid-2.75U
+
+
+0
+4
+2
+MX_Alps_Hybrid
+MX-Alps-Hybrid-2.75U-ReversedStabilizers
+
+
+0
+4
+2
+MX_Alps_Hybrid
+MX-Alps-Hybrid-2U
+
+
+0
+4
+2
+MX_Alps_Hybrid
+MX-Alps-Hybrid-2U-ReversedStabilizers
+
+
+0
+4
+2
+MX_Alps_Hybrid
+MX-Alps-Hybrid-2U-Vertical
+
+
+0
+4
+2
+MX_Alps_Hybrid
+MX-Alps-Hybrid-2U-Vertical-ReversedStabilizers
+
+
+0
+4
+2
+MX_Alps_Hybrid
+MX-Alps-Hybrid-3U
+
+
+0
+4
+2
+MX_Alps_Hybrid
+MX-Alps-Hybrid-3U-ReversedStabilizers
+
+
+0
+4
+2
+MX_Alps_Hybrid
+MX-Alps-Hybrid-6.5U
+
+
+0
+4
+2
+MX_Alps_Hybrid
+MX-Alps-Hybrid-6.25U
+
+
+0
+4
+2
+MX_Alps_Hybrid
+MX-Alps-Hybrid-6.25U-ReversedStabilizers
+
+
+0
+4
+2
+MX_Alps_Hybrid
+MX-Alps-Hybrid-6U
+
+
+0
+4
+2
+MX_Alps_Hybrid
+MX-Alps-Hybrid-6U-Offcenter
+
+
+0
+4
+2
+MX_Alps_Hybrid
+MX-Alps-Hybrid-6U-Offcenter-ReversedStabilizers
+
+
+0
+4
+2
+MX_Alps_Hybrid
+MX-Alps-Hybrid-6U-ReversedStabilizers
+
+
+0
+4
+2
+MX_Alps_Hybrid
+MX-Alps-Hybrid-7U
+
+
+0
+4
+2
+MX_Alps_Hybrid
+MX-Alps-Hybrid-7U-ReversedStabilizers
+
+
+0
+4
+2
+MX_Alps_Hybrid
+MX-Alps-Hybrid-8U
+
+
+0
+4
+2
+MX_Alps_Hybrid
+MX-Alps-Hybrid-8U-ReversedStabilizers
+
+
+0
+4
+2
+MX_Alps_Hybrid
+MX-Alps-Hybrid-9U
+
+
+0
+4
+2
+MX_Alps_Hybrid
+MX-Alps-Hybrid-9U-ReversedStabilizers
+
+
+0
+4
+2
+MX_Alps_Hybrid
+MX-Alps-Hybrid-10U
+
+
+0
+4
+2
+MX_Alps_Hybrid
+MX-Alps-Hybrid-10U-ReversedStabilizers
+
+
+0
+4
+2
+MX_Alps_Hybrid
+MX-Alps-Hybrid-ISO
+
+
+0
+4
+2
+MX_Alps_Hybrid
+MX-Alps-Hybrid-ISO-ReversedStabilizers
+
+
+0
+4
+2
+MX_Alps_Hybrid
+MX-Alps-Hybrid-ISO-Rotated
+
+
+0
+4
+2
+MX_Alps_Hybrid
+MX-Alps-Hybrid-ISO-Rotated-ReversedStabilizers
+
+
+0
+4
+2
 Module
 A20_OLINUXINO_LIME2
 A20 Olinuxino LIME2, 1.2GHz, 512-1024MB RAM, Micro-SD, NAND or eMMC, 1000Mbit Ethernet
@@ -64057,6 +64288,20 @@ DIL DIP PDIP 2.54mm 7.62mm 300mil
 4
 4
 PCM_marbastlib-choc
+LED_choc_1206R
+Add-on for regular choc-footprints with MHT151RGBCT 1206 reverse mount LED
+kailh choc 1206 rearmount rear mount led rgb backlight 
+0
+4
+4
+PCM_marbastlib-choc
+LED_choc_1206R-ROT
+Add-on for regular choc-footprints with MHT151RGBCT 1206 reverse mount LED
+kailh choc 1206 rearmount rear mount led rgb backlight
+0
+4
+4
+PCM_marbastlib-choc
 LED_choc_6028R
 Add-on for regular choc-footprints with 6028 reverse mount LED
 kailh choc 6028 rearmount rear mount led rgb backlight
@@ -64099,28 +64344,28 @@ Footprint for Kailh Choc style switches
 2
 2
 PCM_marbastlib-choc
-SW_choc_v1_HS_1.5u
+SW_choc_v1_HS_CPG135001S30_1.5u
 Hotswap footprint for Kailh Choc style switches
 
 0
 6
 2
 PCM_marbastlib-choc
-SW_choc_v1_HS_1.25u
+SW_choc_v1_HS_CPG135001S30_1.25u
 Hotswap footprint for Kailh Choc style switches
 
 0
 6
 2
 PCM_marbastlib-choc
-SW_choc_v1_HS_1.75u
+SW_choc_v1_HS_CPG135001S30_1.75u
 Hotswap footprint for Kailh Choc style switches
 
 0
 6
 2
 PCM_marbastlib-choc
-SW_choc_v1_HS_1u
+SW_choc_v1_HS_CPG135001S30_1u
 Hotswap footprint for Kailh Choc style switches
 
 0
@@ -64210,6 +64455,20 @@ cherry MX 3mm led backlight
 0
 2
 2
+PCM_marbastlib-mx
+LED_MX_1206R
+Add-on for regular MX-footprints with MHT151RGBCT 1206 reverse mount LED
+cherry MX 1206 rearmount rear mount led rgb backlight
+0
+4
+4
+PCM_marbastlib-mx
+LED_MX_1206R-ROT
+Add-on for regular MX-footprints with MHT151RGBCT 1206 reverse mount LED
+cherry MX 1206 rearmount rear mount led rgb backlight
+0
+4
+4
 PCM_marbastlib-mx
 LED_MX_6028R
 Add-on for regular MX-footprints with 6028 reverse mount LED
@@ -64477,49 +64736,49 @@ cherry mx switch
 2
 2
 PCM_marbastlib-mx
-SW_MX_HS_1.5u
+SW_MX_HS_CPG151101S11_1.5u
 Footprint for Cherry MX style switches with Kailh hotswap socket
 
 0
 6
 2
 PCM_marbastlib-mx
-SW_MX_HS_1.25u
+SW_MX_HS_CPG151101S11_1.25u
 Footprint for Cherry MX style switches with Kailh hotswap socket
 
 0
 6
 2
 PCM_marbastlib-mx
-SW_MX_HS_1.75u
+SW_MX_HS_CPG151101S11_1.75u
 Footprint for Cherry MX style switches with Kailh hotswap socket
 
 0
 6
 2
 PCM_marbastlib-mx
-SW_MX_HS_1.75u_STP_1.5
+SW_MX_HS_CPG151101S11_1.75u_STP_1.5
 Footprint for Cherry MX style switches with Kailh hotswap socket
 
 0
 6
 2
 PCM_marbastlib-mx
-SW_MX_HS_1.75u_STP_1.25
+SW_MX_HS_CPG151101S11_1.75u_STP_1.25
 Footprint for Cherry MX style switches with Kailh hotswap socket
 
 0
 6
 2
 PCM_marbastlib-mx
-SW_MX_HS_1u
+SW_MX_HS_CPG151101S11_1u
 Footprint for Cherry MX style switches with Kailh hotswap socket
 
 0
 6
 2
 PCM_marbastlib-mx
-SW_MX_HS_S_1u
+SW_MX_HS_S_CPG151101S11_1u
 Footprint for Cherry MX style switches with Kailh hotswap socket
 
 0
@@ -64554,7 +64813,21 @@ HytePro magnetic connector
 4
 4
 PCM_marbastlib-various
+CON_HytePro_M411P_Plug_1x04-P2.20mm_Horizontal_FlushMount
+HytePro M411P magnetic connector footprint (4 pin) Link: https://www.hyte.pro/product/m411p.html
+HytePro magnetic connector
+0
+4
+4
+PCM_marbastlib-various
 CON_HytePro_M411P_Receptacle_1x04-P2.20mm_Horizontal
+HytePro M411P magnetic connector footprint (4 pin) Link: https://www.hyte.pro/product/m411p.html
+HytePro magnetic connector
+0
+4
+4
+PCM_marbastlib-various
+CON_HytePro_M411P_Receptacle_1x04-P2.20mm_Horizontal_FlushMount
 HytePro M411P magnetic connector footprint (4 pin) Link: https://www.hyte.pro/product/m411p.html
 HytePro magnetic connector
 0
@@ -64574,6 +64847,13 @@ tag connect programming header pogo pins
 0
 6
 6
+PCM_marbastlib-various
+LED_1206R
+rear-mount SMD MHT151RGBCT 1206 RGB LED
+LED RGB 1206 rear mount reverse
+0
+4
+4
 PCM_marbastlib-various
 LED_6028R
 rear-mount SMD 6028 RGB LED
@@ -64658,6 +64938,13 @@ connector Molex Pico-EZmate side entry
 0
 20
 7
+PCM_marbastlib-various
+PNT_RKJXU1210006
+
+
+0
+3
+1
 PCM_marbastlib-various
 QFN-60_EP_7x7_Pitch0.4mm
 QFN-60 package accroding to IS31FL3741A datasheets
@@ -64792,6 +65079,20 @@ mousebites hex
 0
 0
 PCM_marbastlib-various
+nRF52840_E73-2G4M08S1C
+Module containing a nRF52840 and most passives and antenna
+ebyte e73 2G4M08S1C nRF52840 bluetooth low energy 
+0
+43
+43
+PCM_marbastlib-various
+nRF52840_E73-2G4M08S1C_simple
+Module containing a nRF52840 and most passives and antenna
+ebyte e73 2G4M08S1C nRF52840 bluetooth low energy 
+0
+28
+28
+PCM_marbastlib-various
 nRF52840_holyiot_18010
 Module containing a nRF52840 and most passives and antenna
 holyiot 18010 nRF52840 bluetooth low energy 
@@ -64896,20 +65197,6 @@ cherry mx alps SKCM SKCL switch
 0
 4
 2
-PCM_marbastlib-xp-choc
-LED_choc_1206R
-Add-on for regular choc-footprints with MHT151RGBCT 1206 reverse mount LED
-kailh choc 1206 rearmount rear mount led rgb backlight 
-0
-4
-4
-PCM_marbastlib-xp-choc
-LED_choc_1206R-ROT
-Add-on for regular choc-footprints with MHT151RGBCT 1206 reverse mount LED
-kailh choc 1206 rearmount rear mount led rgb backlight
-0
-4
-4
 PCM_marbastlib-xp-choc
 LED_choc_WS2812_2020
 Add-on for regular choc-footprints with WS2812_2020
@@ -65016,33 +65303,131 @@ Footprint for Kailh Choc v2 style switches
 3
 3
 PCM_marbastlib-xp-choc
-SW_choc_v2_HS_1.5u
+SW_choc_v2_HS_CPG135001S30_1.5u
 Hotswap footprint for Kailh Choc v2 style switches
 
 0
 7
 3
 PCM_marbastlib-xp-choc
-SW_choc_v2_HS_1.25u
+SW_choc_v2_HS_CPG135001S30_1.25u
 Hotswap footprint for Kailh Choc v2 style switches
 
 0
 7
 3
 PCM_marbastlib-xp-choc
-SW_choc_v2_HS_1.75u
+SW_choc_v2_HS_CPG135001S30_1.75u
 Hotswap footprint for Kailh Choc v2 style switches
 
 0
 7
 3
 PCM_marbastlib-xp-choc
-SW_choc_v2_HS_1u
+SW_choc_v2_HS_CPG135001S30_1u
 Hotswap footprint for Kailh Choc v2 style switches
 
 0
 7
 3
+PCM_marbastlib-xp-gateron_lp
+LED_KS33_1206R
+Add-on for Gateron KS33 footprints with MHT151RGBCT 1206 reverse mount LED
+Gateron KS33 1206 rearmount rear mount led rgb backlight 
+0
+4
+4
+PCM_marbastlib-xp-gateron_lp
+LED_KS33_1206R-ROT
+Add-on for Gateron KS33 footprints with MHT151RGBCT 1206 reverse mount LED
+Gateron KS33 1206 rearmount rear mount led rgb backlight 
+0
+4
+4
+PCM_marbastlib-xp-gateron_lp
+LED_KS33_6028R
+Add-on for Gateron KS33 footprints with with 6028 reverse mount LED
+Gateron KS33 6028 rearmount rear mount led rgb backlight
+0
+4
+4
+PCM_marbastlib-xp-gateron_lp
+LED_KS33_6028R-ROT
+Add-on for Gateron KS33 footprints with with 6028 reverse mount LED
+Gateron KS33 6028 rearmount rear mount led rgb backlight
+0
+4
+4
+PCM_marbastlib-xp-gateron_lp
+LED_KS33_WS2812_2020
+Add-on for Gateron KS33 footprints with WS2812-2020 reverse mount LED (handsolder only)
+Gateron KS33 WS2812 2020 rearmount rear mount led rgb backlight 
+0
+4
+4
+PCM_marbastlib-xp-gateron_lp
+LED_KS33_WS2812_2020-ROT
+Add-on for Gateron KS33 footprints with WS2812-2020 reverse mount LED (handsolder only)
+Gateron KS33 WS2812 2020 rearmount rear mount led rgb backlight 
+0
+4
+4
+PCM_marbastlib-xp-gateron_lp
+SW_KS33_1.5u
+Footprint for Gateron KS33 switches
+
+0
+2
+2
+PCM_marbastlib-xp-gateron_lp
+SW_KS33_1.25u
+Footprint for Gateron KS33 switches
+
+0
+2
+2
+PCM_marbastlib-xp-gateron_lp
+SW_KS33_1.75u
+Footprint for Gateron KS33 switches
+
+0
+2
+2
+PCM_marbastlib-xp-gateron_lp
+SW_KS33_1u
+Footprint for Gateron KS33 switches
+
+0
+2
+2
+PCM_marbastlib-xp-gateron_lp
+SW_KS33_HS_KS-2P02B01-02_1.5u
+Hotswap footprint for Gateron KS33 switches
+
+0
+6
+2
+PCM_marbastlib-xp-gateron_lp
+SW_KS33_HS_KS-2P02B01-02_1.25u
+Hotswap footprint for Gateron KS33 switches
+
+0
+6
+2
+PCM_marbastlib-xp-gateron_lp
+SW_KS33_HS_KS-2P02B01-02_1.75u
+Hotswap footprint for Gateron KS33 switches
+
+0
+6
+2
+PCM_marbastlib-xp-gateron_lp
+SW_KS33_HS_KS-2P02B01-02_HS_1u
+Hotswap footprint for Gateron KS33 switches
+
+0
+6
+2
 PCM_marbastlib-xp-hitek
 SW_HiTek_Mount_1.5u
 Footprint for Hi-Tek Series 725 ("Space Invader") Switches
@@ -65114,20 +65499,6 @@ Hi-Tek hitek space invader switch keyboard 725
 4
 2
 PCM_marbastlib-xp-mx
-LED_MX_1206R
-Add-on for regular MX-footprints with MHT151RGBCT 1206 reverse mount LED
-cherry MX 1206 rearmount rear mount led rgb backlight
-0
-4
-4
-PCM_marbastlib-xp-mx
-LED_MX_1206R-ROT
-Add-on for regular MX-footprints with MHT151RGBCT 1206 reverse mount LED
-cherry MX 1206 rearmount rear mount led rgb backlight
-0
-4
-4
-PCM_marbastlib-xp-mx
 LED_MX_WS2812_2020
 Add-on for regular MX-footprints with WS2812_2020
 cherry MX WS2812 2020 rearmount rear mount led rgb backlight
@@ -65148,6 +65519,48 @@ cherry mx pcb plate break
 0
 0
 0
+PCM_marbastlib-xp-mx
+SW_MX_HS_KS-2P02B01-01_1.5u
+Footprint for Cherry MX style switches with Gateron KS-2P02B01-01 hotswap socket
+
+0
+6
+2
+PCM_marbastlib-xp-mx
+SW_MX_HS_KS-2P02B01-01_1.25u
+Footprint for Cherry MX style switches with Gateron KS-2P02B01-01 hotswap socket
+
+0
+6
+2
+PCM_marbastlib-xp-mx
+SW_MX_HS_KS-2P02B01-01_1.75u
+Footprint for Cherry MX style switches with Gateron KS-2P02B01-01 hotswap socket
+
+0
+6
+2
+PCM_marbastlib-xp-mx
+SW_MX_HS_KS-2P02B01-01_1.75u_STP_1.5
+Footprint for Cherry MX style switches with Gateron KS-2P02B01-01 hotswap socket
+
+0
+6
+2
+PCM_marbastlib-xp-mx
+SW_MX_HS_KS-2P02B01-01_1.75u_STP_1.25
+Footprint for Cherry MX style switches with Gateron KS-2P02B01-01 hotswap socket
+
+0
+6
+2
+PCM_marbastlib-xp-mx
+SW_MX_HS_KS-2P02B01-01_1u
+Footprint for Cherry MX style switches with Gateron KS-2P02B01-01 hotswap socket
+
+0
+6
+2
 PCM_marbastlib-xp-mx
 SW_MX_Reversible_1u
 Reversible footprint for Cherry MX style switches
@@ -65912,20 +66325,6 @@ PCB antenna IFA inverted F bluetooth 2.4 GHz
 51
 2
 PCM_marbastlib-xp-various
-CON_HytePro_M411P_Plug_1x04-P2.20mm_Horizontal_FlushMount
-HytePro M411P magnetic connector footprint (4 pin) Link: https://www.hyte.pro/product/m411p.html
-HytePro magnetic connector
-0
-4
-4
-PCM_marbastlib-xp-various
-CON_HytePro_M411P_Receptacle_1x04-P2.20mm_Horizontal_FlushMount
-HytePro M411P magnetic connector footprint (4 pin) Link: https://www.hyte.pro/product/m411p.html
-HytePro magnetic connector
-0
-4
-4
-PCM_marbastlib-xp-various
 CON_MJ-4PP-9
 TRRS Jack
 TRRS jack 3.5mm headphone connector
@@ -65938,13 +66337,6 @@ Reversible TRRS Jack
 TRRS jack 3.5mm headphone connector
 0
 8
-4
-PCM_marbastlib-xp-various
-LED_1206R
-rear-mount SMD MHT151RGBCT 1206 RGB LED
-LED RGB 1206 rear mount reverse
-0
-4
 4
 PCM_marbastlib-xp-various
 LED_WS2812_2020_rearmount
@@ -65968,12 +66360,33 @@ LiIon LiPo battery charger management usb power path switch-mode step-down buck
 24
 24
 PCM_marbastlib-xp-various
-PNT_RKJXU1210006
-
-
+Molex_Pico-EZmate_HC_208294-0020_1x02-1MP_P1.80mm_Vertical
+Molex Pico-EZmate series connector, 208294-0020 (https://www.molex.com/en-us/products/part-detail/2082940020)
+connector Molex Pico-EZmate side entry
 0
+16
 3
-1
+PCM_marbastlib-xp-various
+Molex_Pico-EZmate_HC_208294-0030_1x03-1MP_P1.80mm_Vertical
+Molex Pico-EZmate series connector, 208294-0030 (https://www.molex.com/en-us/products/part-detail/2082940030)
+connector Molex Pico-EZmate side entry
+0
+17
+4
+PCM_marbastlib-xp-various
+Molex_Pico-EZmate_HC_208294-0040_1x04-1MP_P1.80mm_Vertical
+Molex Pico-EZmate series connector, 208294-0030 (https://www.molex.com/en-us/products/part-detail/2082940040)
+connector Molex Pico-EZmate side entry
+0
+18
+5
+PCM_marbastlib-xp-various
+Molex_Pico-EZmate_HC_208294-0050_1x05-1MP_P1.80mm_Vertical
+Molex Pico-EZmate series connector, 208294-0030 (https://www.molex.com/en-us/products/part-detail/2082940040)
+connector Molex Pico-EZmate side entry
+0
+19
+6
 PCM_marbastlib-xp-various
 PNT_psp1000
 Footprint for a PSP-1000 joystick
@@ -65989,19 +66402,12 @@ stm32 arm wireless bluetooth low energy ble zigbee
 86
 86
 PCM_marbastlib-xp-various
-nRF52840_E73-2G4M08S1C
-Module containing a nRF52840 and most passives and antenna
-ebyte e73 2G4M08S1C nRF52840 bluetooth low energy 
+XUNPU_FPC-05F-16PH20_1x16-1MP_P0.5mm_Horizontal
+XUNPU FPC connector, 16 bottom-side contacts, 0.5mm pitch, SMT, https://datasheet.lcsc.com/lcsc/2109221030_XUNPU-FPC-05F-16PH20_C2856801.pdf
+XUNPU  fpc FPC-05F-16PH20
 0
-43
-43
-PCM_marbastlib-xp-various
-nRF52840_E73-2G4M08S1C_simple
-Module containing a nRF52840 and most passives and antenna
-ebyte e73 2G4M08S1C nRF52840 bluetooth low energy 
-0
-28
-28
+18
+17
 PCM_marbastlib-xp-various
 nRF52840_holyiot_18010_HS
 Module containing a nRF52840 and most passives and antenna
@@ -91687,6 +92093,13 @@ R
 2
 kbd
 D3_TH_SMD_v2
+Resitance 3 pas
+R
+0
+4
+2
+kbd
+D3_TH_SMD_v3
 Resitance 3 pas
 R
 0

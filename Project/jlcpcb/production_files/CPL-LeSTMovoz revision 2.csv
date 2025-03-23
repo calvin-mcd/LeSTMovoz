@@ -1,0 +1,4 @@
+Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
+J1,USB_C_Receptacle_USB2.0,USB_C_Receptacle_HRO_TYPE-C-31-M-12,236.913179,-27.35375,180.0,bottom
+U1,STM32F072RBTx,LQFP-64_10x10mm_P0.5mm,145.25625,-69.668597,90.0,top
+U3,74AHCT1G125,TSOT-23-5_HandSoldering,142.08125,-38.1,90.0,top

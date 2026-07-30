@@ -1,7 +1,7 @@
 (kicad_pcb
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(general
 		(thickness 1.6)
 		(legacy_teardrops no)
@@ -9,34 +9,34 @@
 	(paper "A4")
 	(layers
 		(0 "F.Cu" signal)
-		(31 "B.Cu" signal)
-		(32 "B.Adhes" user "B.Adhesive")
-		(33 "F.Adhes" user "F.Adhesive")
-		(34 "B.Paste" user)
-		(35 "F.Paste" user)
-		(36 "B.SilkS" user "B.Silkscreen")
-		(37 "F.SilkS" user "F.Silkscreen")
-		(38 "B.Mask" user)
-		(39 "F.Mask" user)
-		(40 "Dwgs.User" user "User.Drawings")
-		(41 "Cmts.User" user "User.Comments")
-		(42 "Eco1.User" user "User.Eco1")
-		(43 "Eco2.User" user "User.Eco2")
-		(44 "Edge.Cuts" user)
-		(45 "Margin" user)
-		(46 "B.CrtYd" user "B.Courtyard")
-		(47 "F.CrtYd" user "F.Courtyard")
-		(48 "B.Fab" user)
-		(49 "F.Fab" user)
-		(50 "User.1" user)
-		(51 "User.2" user)
-		(52 "User.3" user)
-		(53 "User.4" user)
-		(54 "User.5" user)
-		(55 "User.6" user)
-		(56 "User.7" user)
-		(57 "User.8" user)
-		(58 "User.9" user)
+		(2 "B.Cu" signal)
+		(9 "F.Adhes" user "F.Adhesive")
+		(11 "B.Adhes" user "B.Adhesive")
+		(13 "F.Paste" user)
+		(15 "B.Paste" user)
+		(5 "F.SilkS" user "F.Silkscreen")
+		(7 "B.SilkS" user "B.Silkscreen")
+		(1 "F.Mask" user)
+		(3 "B.Mask" user)
+		(17 "Dwgs.User" user "User.Drawings")
+		(19 "Cmts.User" user "User.Comments")
+		(21 "Eco1.User" user "User.Eco1")
+		(23 "Eco2.User" user "User.Eco2")
+		(25 "Edge.Cuts" user)
+		(27 "Margin" user)
+		(31 "F.CrtYd" user "F.Courtyard")
+		(29 "B.CrtYd" user "B.Courtyard")
+		(35 "F.Fab" user)
+		(33 "B.Fab" user)
+		(39 "User.1" user)
+		(41 "User.2" user)
+		(43 "User.3" user)
+		(45 "User.4" user)
+		(47 "User.5" user)
+		(49 "User.6" user)
+		(51 "User.7" user)
+		(53 "User.8" user)
+		(55 "User.9" user)
 	)
 	(setup
 		(stackup
@@ -80,9 +80,10 @@
 		)
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
+		(tenting front back)
 		(pcbplotparams
-			(layerselection 0x00010fc_ffffffff)
-			(plot_on_all_layers_selection 0x0000000_00000000)
+			(layerselection 0x00000000_00000000_55555555_5755f5ff)
+			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
 			(disableapertmacros no)
 			(usegerberextensions no)
 			(usegerberattributes yes)
@@ -92,7 +93,6 @@
 			(dashed_line_gap_ratio 3.000000)
 			(svgprecision 4)
 			(plotframeref no)
-			(viasonmask no)
 			(mode 1)
 			(useauxorigin no)
 			(hpglpennumber 1)
@@ -100,16 +100,19 @@
 			(hpglpendiameter 15.000000)
 			(pdf_front_fp_property_popups yes)
 			(pdf_back_fp_property_popups yes)
+			(pdf_metadata yes)
+			(pdf_single_document no)
 			(dxfpolygonmode yes)
 			(dxfimperialunits yes)
 			(dxfusepcbnewfont yes)
 			(psnegative no)
 			(psa4output no)
-			(plotreference yes)
-			(plotvalue yes)
-			(plotfptext yes)
-			(plotinvisibletext no)
+			(plot_black_and_white yes)
 			(sketchpadsonfab no)
+			(plotpadnumbers no)
+			(hidednponfab no)
+			(sketchdnponfab yes)
+			(crossoutdnponfab yes)
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
@@ -251,18 +254,6 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "7fbfb7be-830b-4126-bb85-ef70d69d40c3")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -295,6 +286,7 @@
 			(remove_unused_layers no)
 			(uuid "d238d355-2008-45f1-8520-834923eeab2c")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "kbd:D3_TH_SMD_v3"
 		(layer "F.Cu")
@@ -326,19 +318,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:D3_TH_SMD_v3"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "8c6719fc-9cc7-41ee-9e7c-b4f57b63cc8e")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -388,9 +368,9 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/d48c86a3-781f-4e8f-af8e-e65a30d9912a")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -0.5 -0.5)
 			(end -0.5 0.5)
@@ -445,7 +425,7 @@
 		(pad "1" smd rect
 			(at -1.775 0 180)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 30 "ROW0")
 			(pinfunction "K")
 			(pintype "passive")
@@ -454,7 +434,7 @@
 		(pad "2" smd rect
 			(at 1.775 0 180)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 34 "Net-(D6-A)")
 			(pinfunction "A")
 			(pintype "passive")
@@ -471,6 +451,7 @@
 			(pintype "passive")
 			(uuid "3f549649-b3d3-4439-9785-e7bfb7a4cca6")
 		)
+		(embedded_fonts no)
 		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -534,19 +515,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H4.3mm"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f28ad435-e5d6-44d0-b6c4-81ae91e09e27")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -570,7 +539,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C115351"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -583,9 +552,9 @@
 			)
 		)
 		(path "/9f3be311-494f-4087-9a8c-673e8658f143")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -0.25 1.5)
 			(end -0.25 3)
@@ -803,7 +772,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "4529afc9-2915-4076-b939-37a0d4ce29b6")
 		)
@@ -862,6 +831,7 @@
 			(pintype "passive")
 			(uuid "bc6db441-186a-4680-85fc-dda7c18fa5e3")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH_6mm_H4.3mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -903,19 +873,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "bea7c236-aefa-4377-9426-8b041b9f6871")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -941,9 +899,9 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/ae0a954c-f94f-4d60-b18c-86d734913f9d")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 0.94 0)
 			(end 1.89 0)
@@ -1135,6 +1093,7 @@
 			(pintype "passive")
 			(uuid "1c4c4d95-1665-451c-a083-a52a6c2dd3f5")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1176,19 +1135,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Fuse:Fuse_Bourns_MF-RHT100"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "7bcbadb1-8fc4-4f38-a4b7-c72a0f543497")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -1214,9 +1161,9 @@
 		)
 		(property ki_fp_filters "*polyfuse* *PTC*")
 		(path "/526639c2-4bbb-4af6-89af-72e2121f80e2")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -0.394 1.773)
 			(end 5.516 1.773)
@@ -1348,6 +1295,7 @@
 			(pintype "passive")
 			(uuid "30362efa-b1b9-4ab7-b64b-94b8e1310cd3")
 		)
+		(embedded_fonts no)
 		(model "${KICAD7_3DMODEL_DIR}/Fuse.3dshapes/Fuse_BelFuse_0ZRE_0ZRE0005FF_L8.3mm_W3.8mm.step"
 			(offset
 				(xyz 0 0 1.5)
@@ -1389,19 +1337,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "58b56c83-7494-42d7-8532-e0a6a794fa10")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -1439,9 +1375,9 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/70425738-2b24-4b05-ba82-4e276d9a9cc5")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 4.77 -1.07)
 			(end 4.77 -1.055)
@@ -1613,6 +1549,7 @@
 			(pintype "passive")
 			(uuid "dac1bac0-ab7c-4e72-baa9-2f7e0aa364d1")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Disc_D4.3mm_W1.9mm_P5.00mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1651,19 +1588,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "55b8d217-9548-4950-a06b-55b72a10e58a")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1688,9 +1613,9 @@
 			)
 		)
 		(path "/052a52e0-81f5-41a4-b22c-1364e042d7b3")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -9.525 9.525)
 			(end -9.525 -9.525)
@@ -1815,7 +1740,7 @@
 			(at -5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "712b7b30-327a-4259-b6b1-66e8c317c71c")
 		)
 		(pad "" np_thru_hole circle
@@ -1829,7 +1754,7 @@
 			(at 5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "6a3a6e7a-c826-4679-80fc-9ea7793c3ce0")
 		)
 		(pad "1" thru_hole oval
@@ -1880,6 +1805,7 @@
 			(pintype "passive")
 			(uuid "6a4d6875-adde-462c-b824-7d7464012946")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
 		(layer "F.Cu")
@@ -1907,19 +1833,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ade4cc55-8b9d-4f18-bcc7-4602d4d58d20")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1944,9 +1858,9 @@
 			)
 		)
 		(path "/a692636c-a2b4-41f0-9665-8e66e3d5496f")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -9.525 9.525)
 			(end -9.525 -9.525)
@@ -2071,7 +1985,7 @@
 			(at -5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "b2e3650a-bc0d-4ad4-a243-189d3d9ba83f")
 		)
 		(pad "" np_thru_hole circle
@@ -2085,7 +1999,7 @@
 			(at 5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "7d38d5ea-95b7-4f19-a3a7-8910f116f2b3")
 		)
 		(pad "1" thru_hole oval
@@ -2136,6 +2050,7 @@
 			(pintype "passive")
 			(uuid "fe4e2934-6a46-4323-8406-fd54949e47f0")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 		(layer "F.Cu")
@@ -2166,20 +2081,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
-			(at 0 0 -90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "1e8b5ab3-dd1d-4927-b887-dee4056887e1")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 -90)
+		(property "Datasheet" "~"
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "95ca3041-759c-45ca-ad95-0cded36da1bf")
@@ -2191,7 +2094,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "160d28d2-1414-4c90-9d5f-214df981066c")
@@ -2204,9 +2107,9 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/4ed080fc-952d-4de2-ad27-9810a1be3dad")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 1.89 0.92)
 			(end 5.73 0.92)
@@ -2398,6 +2301,7 @@
 			(pintype "passive")
 			(uuid "22f30bfd-e4fd-4d90-8b7b-9e2dcee531a4")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2436,19 +2340,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c7a7e2cb-56b0-4c2f-8033-c0526bc88831")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2473,9 +2365,9 @@
 			)
 		)
 		(path "/ed73cad4-33dd-48c0-a773-93585bbdfc7d")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -9.525 9.525)
 			(end -9.525 -9.525)
@@ -2600,7 +2492,7 @@
 			(at -5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "5c46bbe6-375a-44d0-861c-80d5caa827ce")
 		)
 		(pad "" np_thru_hole circle
@@ -2614,7 +2506,7 @@
 			(at 5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "b067d5d9-197e-4759-b5f6-e28608fe6f24")
 		)
 		(pad "1" thru_hole oval
@@ -2665,6 +2557,7 @@
 			(pintype "passive")
 			(uuid "60ff31f8-0aa7-4eb8-851d-c5d051207666")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
 		(layer "F.Cu")
@@ -2692,19 +2585,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "7f5fd4db-a0b9-49b8-9b6f-512cb342ab1d")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2729,9 +2610,9 @@
 			)
 		)
 		(path "/a876ec7d-8c7b-4b21-b0cd-c268e8ea37f0")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -9.525 9.525)
 			(end -9.525 -9.525)
@@ -2856,7 +2737,7 @@
 			(at -5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "2a9c157b-a7f9-4b9b-9bd2-4c5dd63d25c8")
 		)
 		(pad "" np_thru_hole circle
@@ -2870,7 +2751,7 @@
 			(at 5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "8043f04a-61f1-43b9-83a7-fc89b4ee4c22")
 		)
 		(pad "1" thru_hole oval
@@ -2921,6 +2802,7 @@
 			(pintype "passive")
 			(uuid "aa9b85bf-a991-4aab-949a-1f852ac2ac08")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
 		(layer "F.Cu")
@@ -2948,19 +2830,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "bf844418-fb65-4e6d-9ad9-025c5951e2f9")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2985,9 +2855,9 @@
 			)
 		)
 		(path "/e4c00f5a-0daa-4103-a62f-0c9ba8ad15f1")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -9.525 9.525)
 			(end -9.525 -9.525)
@@ -3112,7 +2982,7 @@
 			(at -5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "2145a730-1580-4001-b17c-9841ed1029d3")
 		)
 		(pad "" np_thru_hole circle
@@ -3126,7 +2996,7 @@
 			(at 5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "0186d4bb-5802-4d28-aa94-c0634ee731bd")
 		)
 		(pad "1" thru_hole oval
@@ -3177,6 +3047,7 @@
 			(pintype "passive")
 			(uuid "35b4cb24-abbc-4997-ba1c-d2e28cbdf161")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "kbd:D3_TH_SMD_v3"
 		(layer "F.Cu")
@@ -3208,19 +3079,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:D3_TH_SMD_v3"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a7774fc4-055b-46ef-9378-9216c3d344de")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -3270,9 +3129,9 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/7b142f43-74b2-4b2a-b49d-05c22259125d")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 0.5 0.5)
 			(end -0.4 0)
@@ -3327,7 +3186,7 @@
 		(pad "1" smd rect
 			(at -1.775 0)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 30 "ROW0")
 			(pinfunction "K")
 			(pintype "passive")
@@ -3336,7 +3195,7 @@
 		(pad "2" smd rect
 			(at 1.775 0)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 28 "Net-(D4-A)")
 			(pinfunction "A")
 			(pintype "passive")
@@ -3353,6 +3212,7 @@
 			(pintype "passive")
 			(uuid "810c9419-7cfe-473c-9638-1b9854db4a3e")
 		)
+		(embedded_fonts no)
 		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -3413,19 +3273,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "edc9280d-ed84-4c38-b168-e1274116b727")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3450,9 +3298,9 @@
 			)
 		)
 		(path "/fc602687-5b45-4718-8218-197e3b85c8a1")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -9.525 9.525)
 			(end -9.525 -9.525)
@@ -3577,7 +3425,7 @@
 			(at -5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "4a706759-bc33-4c5f-a7cc-fdb777340eda")
 		)
 		(pad "" np_thru_hole circle
@@ -3591,7 +3439,7 @@
 			(at 5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "7ec57012-bf46-49ba-995f-0e378853e3f3")
 		)
 		(pad "1" thru_hole oval
@@ -3642,6 +3490,7 @@
 			(pintype "passive")
 			(uuid "1fbe143c-4d2a-4c89-a9de-e0ae428be408")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "MountingHole:MountingHole_2.2mm_M2_Pad"
 		(locked yes)
@@ -3668,18 +3517,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "228ae2d0-22d7-4cb1-939d-89b405aaf54c")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -3716,7 +3553,7 @@
 				(width 0.15)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "532a8d13-eb83-44a6-a85f-d8d8be1553fb")
 		)
@@ -3727,7 +3564,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "897b0a08-3dd4-49c7-b138-290bfc69c6aa")
 		)
@@ -3750,6 +3587,7 @@
 			(remove_unused_layers no)
 			(uuid "f2fbc5ea-5f71-43e1-8503-21f22c99a45b")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "PCM_marbastlib-mx:STAB_MX_P_2u"
 		(layer "F.Cu")
@@ -3779,18 +3617,6 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-mx:STAB_MX_P_2u"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "69f25764-1a73-456b-99be-31b957a276c7")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 180)
 			(layer "F.Fab")
@@ -3816,9 +3642,9 @@
 			)
 		)
 		(path "/9ecb6cd0-42da-4c1e-8566-1cef9642b173")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 19.05 -9.525)
 			(end 19.05 9.525)
@@ -4153,6 +3979,7 @@
 				"f4a195fc-15ac-4454-9369-bb6387a6e9d3" "f8ad18a0-5150-4609-9a18-7a441b7018d0"
 			)
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 		(layer "F.Cu")
@@ -4183,19 +4010,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "6305359f-ada9-4be2-b426-2b0145a4d492")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -4233,9 +4048,9 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/13633af3-e5a9-47d5-a8b2-92b485222a76")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 4.77 -1.07)
 			(end 4.77 -1.055)
@@ -4407,6 +4222,7 @@
 			(pintype "passive")
 			(uuid "1a5eab23-2ec6-45dc-900d-b785441efc49")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Disc_D4.3mm_W1.9mm_P5.00mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -4445,19 +4261,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "44e5e855-02f0-4d63-9092-786e8c045ffd")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -4482,9 +4286,9 @@
 			)
 		)
 		(path "/9cd55ccd-0239-4cc3-8dd6-f1015f4c869a")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -9.525 9.525)
 			(end -9.525 -9.525)
@@ -4609,7 +4413,7 @@
 			(at -5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "eabb33ef-48f6-488b-8fdb-be6f554c60f8")
 		)
 		(pad "" np_thru_hole circle
@@ -4623,7 +4427,7 @@
 			(at 5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "e55cbc7b-e04c-4d7d-85fd-3fe5e6c7905a")
 		)
 		(pad "1" thru_hole oval
@@ -4674,6 +4478,7 @@
 			(pintype "passive")
 			(uuid "f38214a3-ac4c-480f-a4e3-287d9c70b364")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 		(layer "F.Cu")
@@ -4704,19 +4509,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "34cc765a-d3e5-4942-b9f8-c037a9168106")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -4754,9 +4547,9 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/24651d3a-53e1-43b4-8c0f-92ac0dbb17ef")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 4.77 1.055)
 			(end 4.77 1.07)
@@ -4928,6 +4721,7 @@
 			(pintype "passive")
 			(uuid "eb8aeae9-31bc-4e5c-90ab-76b1bf292d96")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Disc_D4.3mm_W1.9mm_P5.00mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -4966,19 +4760,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "89f5885b-1049-4834-aeb9-6ce75865c279")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5003,9 +4785,9 @@
 			)
 		)
 		(path "/3dd9fa16-78d2-4f3b-b981-7b5ec105d8d5")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -9.525 9.525)
 			(end -9.525 -9.525)
@@ -5130,7 +4912,7 @@
 			(at -5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "2ec8973d-4a5a-448b-a4be-4ef68e79f30b")
 		)
 		(pad "" np_thru_hole circle
@@ -5144,7 +4926,7 @@
 			(at 5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "a3b13725-aa5c-4792-9967-60df83f018fc")
 		)
 		(pad "1" thru_hole oval
@@ -5195,6 +4977,7 @@
 			(pintype "passive")
 			(uuid "bf3f163f-7891-4ed8-8e41-4a0fe8cf7e67")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
 		(layer "F.Cu")
@@ -5222,19 +5005,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "19cbc8d8-b71e-409b-89bf-8b5965e8e5bc")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5259,9 +5030,9 @@
 			)
 		)
 		(path "/1414b0c2-1125-472f-bb97-13c8a9cc36ed")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -9.525 9.525)
 			(end -9.525 -9.525)
@@ -5386,7 +5157,7 @@
 			(at -5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "d5651ce1-14f7-4b03-b4f0-0e0b4a8f3dde")
 		)
 		(pad "" np_thru_hole circle
@@ -5400,7 +5171,7 @@
 			(at 5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "cc04ac81-cd4e-40e4-ae5c-8af2aabec02f")
 		)
 		(pad "1" thru_hole oval
@@ -5451,6 +5222,7 @@
 			(pintype "passive")
 			(uuid "6f8a8b85-99cf-48e0-84f2-97cc3f95b2bf")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "PCM_marbastlib-mx:STAB_MX_P_3u"
 		(layer "F.Cu")
@@ -5480,18 +5252,6 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-mx:STAB_MX_P_3u"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "dff54a1e-be67-42a2-80a3-964a9268f190")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 180)
 			(layer "F.Fab")
@@ -5517,9 +5277,9 @@
 			)
 		)
 		(path "/6d0f5993-4ac4-4150-99b7-e92c4cf734e3")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 28.575 -9.525)
 			(end 28.575 9.525)
@@ -5854,6 +5614,7 @@
 				"91fa9d7e-182d-40ed-a5d7-82a180daeb5e" "c7a14eca-4de9-42c4-8bad-b0a237e109b1"
 			)
 		)
+		(embedded_fonts no)
 	)
 	(footprint "kbd:D3_TH_SMD_v3"
 		(layer "F.Cu")
@@ -5885,19 +5646,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:D3_TH_SMD_v3"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "9b52f772-9987-4fab-a94d-813cacee04ae")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -5947,9 +5696,9 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/64f9e0d7-d403-495c-b6b9-436d96b1bb0d")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 0.5 0.5)
 			(end -0.4 0)
@@ -6004,7 +5753,7 @@
 		(pad "1" smd rect
 			(at -1.775 0)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 54 "ROW1")
 			(pinfunction "K")
 			(pintype "passive")
@@ -6013,7 +5762,7 @@
 		(pad "2" smd rect
 			(at 1.775 0)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "Net-(D12-A)")
 			(pinfunction "A")
 			(pintype "passive")
@@ -6030,6 +5779,7 @@
 			(pintype "passive")
 			(uuid "ea43e41b-6164-4914-ab43-bdc4a1de90d9")
 		)
+		(embedded_fonts no)
 		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -6090,19 +5840,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "33660143-5710-4eb1-93b4-a7756292959a")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -6127,9 +5865,9 @@
 			)
 		)
 		(path "/b4c1b757-b3df-4583-ae7a-a6559fa5ac71")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -9.525 9.525)
 			(end -9.525 -9.525)
@@ -6254,7 +5992,7 @@
 			(at -5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "bfd7d111-8eb2-466e-98ab-1a04f7000dd7")
 		)
 		(pad "" np_thru_hole circle
@@ -6268,7 +6006,7 @@
 			(at 5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "2938f770-4038-489c-afcb-819d968ae96d")
 		)
 		(pad "1" thru_hole oval
@@ -6319,6 +6057,7 @@
 			(pintype "passive")
 			(uuid "ff48c6ed-16fb-40ae-ae5b-50f946950c11")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
 		(layer "F.Cu")
@@ -6346,19 +6085,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "6611fcf4-fe26-40d9-84fc-604b16bed7b0")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -6383,9 +6110,9 @@
 			)
 		)
 		(path "/c8604c7d-e294-4dcb-a8f1-71613a06b31e")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -9.525 9.525)
 			(end -9.525 -9.525)
@@ -6510,7 +6237,7 @@
 			(at -5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "2b198616-d691-40d3-bcb7-f02895279675")
 		)
 		(pad "" np_thru_hole circle
@@ -6524,7 +6251,7 @@
 			(at 5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "f9bbe9c4-91aa-4477-8d2e-f2be48909826")
 		)
 		(pad "1" thru_hole oval
@@ -6575,6 +6302,7 @@
 			(pintype "passive")
 			(uuid "681f3bcc-9ed7-4765-9aae-4fb00fd7cf09")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
 		(layer "F.Cu")
@@ -6602,19 +6330,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "389bcbc9-5e09-4772-b254-f72a645d73c9")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -6639,9 +6355,9 @@
 			)
 		)
 		(path "/781829a6-f885-4101-bd44-f34a093f21ae")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -9.525 9.525)
 			(end -9.525 -9.525)
@@ -6766,7 +6482,7 @@
 			(at -5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "2f00185f-ce32-4ca9-a46a-d55508d2189c")
 		)
 		(pad "" np_thru_hole circle
@@ -6780,7 +6496,7 @@
 			(at 5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "40163393-fa29-4963-9bbb-f235224e5ec7")
 		)
 		(pad "1" thru_hole oval
@@ -6831,6 +6547,7 @@
 			(pintype "passive")
 			(uuid "46d1a8c3-2ec2-41a9-89e7-424c44f97af5")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 		(layer "F.Cu")
@@ -6861,19 +6578,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f4c5e576-4471-4377-9854-43808d4679b4")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -6899,9 +6604,9 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/ceeae6e5-90d3-434c-b056-fb5501b2bdfc")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 6.58 0)
 			(end 5.93 0)
@@ -7166,6 +6871,7 @@
 			(pintype "passive")
 			(uuid "f42632de-ef0b-425b-9511-1c9dd175bd05")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Diode_THT.3dshapes/D_DO-35_SOD27_P7.62mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -7204,19 +6910,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "eefd8246-8007-4e7c-85d6-9a02559b13f4")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7241,9 +6935,9 @@
 			)
 		)
 		(path "/97d5015c-882c-455f-a4ab-ad9d72a4c02e")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -9.525 9.525)
 			(end -9.525 -9.525)
@@ -7368,7 +7062,7 @@
 			(at -5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "1871f8fd-f240-4aac-9503-0bc0305cc66e")
 		)
 		(pad "" np_thru_hole circle
@@ -7382,7 +7076,7 @@
 			(at 5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "dfd6b056-0bf6-4f61-99d9-f0e0a43c55cf")
 		)
 		(pad "1" thru_hole oval
@@ -7433,6 +7127,7 @@
 			(pintype "passive")
 			(uuid "7d4894d5-7c3e-48fd-9981-c231da831400")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "kbd:D3_TH_SMD_v3"
 		(layer "F.Cu")
@@ -7464,19 +7159,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:D3_TH_SMD_v3"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "53e4460f-84ea-4fc6-9322-2bd2fed84267")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -7526,9 +7209,9 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/6bdb4800-eeae-4830-a207-1d3ff5ad7e71")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 0.5 0.5)
 			(end -0.4 0)
@@ -7583,7 +7266,7 @@
 		(pad "1" smd rect
 			(at -1.775 0)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 30 "ROW0")
 			(pinfunction "K")
 			(pintype "passive")
@@ -7592,7 +7275,7 @@
 		(pad "2" smd rect
 			(at 1.775 0)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 26 "Net-(D3-A)")
 			(pinfunction "A")
 			(pintype "passive")
@@ -7609,6 +7292,7 @@
 			(pintype "passive")
 			(uuid "7d7727cc-d5fb-4292-a9d8-ffcafa6b4965")
 		)
+		(embedded_fonts no)
 		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -7673,19 +7357,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:D3_TH_SMD_v3"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "b618b9c6-2485-40ed-8604-f4bb13e51b8f")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7735,9 +7407,9 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/220b88da-a047-4d42-ab1d-23cd30d23a2e")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -0.5 -0.5)
 			(end -0.5 0.5)
@@ -7792,7 +7464,7 @@
 		(pad "1" smd rect
 			(at -1.775 0 180)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 30 "ROW0")
 			(pinfunction "K")
 			(pintype "passive")
@@ -7801,7 +7473,7 @@
 		(pad "2" smd rect
 			(at 1.775 0 180)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 38 "Net-(D8-A)")
 			(pinfunction "A")
 			(pintype "passive")
@@ -7818,6 +7490,7 @@
 			(pintype "passive")
 			(uuid "70d0cbca-3d46-4c1e-93f6-79be14370b9c")
 		)
+		(embedded_fonts no)
 		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -7882,19 +7555,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:D3_TH_SMD_v3"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "808e66e0-70c6-478f-9c2c-56f943b949cf")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7944,9 +7605,9 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/92c3d9c8-831e-4c53-8a19-4551c43aa3f5")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -0.5 -0.5)
 			(end -0.5 0.5)
@@ -8001,7 +7662,7 @@
 		(pad "1" smd rect
 			(at -1.775 0 180)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 54 "ROW1")
 			(pinfunction "K")
 			(pintype "passive")
@@ -8010,7 +7671,7 @@
 		(pad "2" smd rect
 			(at 1.775 0 180)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 6 "Net-(D16-A)")
 			(pinfunction "A")
 			(pintype "passive")
@@ -8027,6 +7688,7 @@
 			(pintype "passive")
 			(uuid "f0715798-6919-473b-9201-3e7226c9987e")
 		)
+		(embedded_fonts no)
 		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -8087,19 +7749,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "7561cda4-8cc0-4272-8bae-43afe987f21d")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -8124,9 +7774,9 @@
 			)
 		)
 		(path "/cb2f35d1-f4aa-416b-afef-148071927781")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -9.525 9.525)
 			(end -9.525 -9.525)
@@ -8251,7 +7901,7 @@
 			(at -5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "63a39407-cbee-4a17-97e8-bd28e60b15d1")
 		)
 		(pad "" np_thru_hole circle
@@ -8265,7 +7915,7 @@
 			(at 5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "f04708e9-781d-4b8e-9a8d-b49c8dcd61fc")
 		)
 		(pad "1" thru_hole oval
@@ -8316,6 +7966,7 @@
 			(pintype "passive")
 			(uuid "c3f41a20-1ff0-4023-84e9-0554016e8ad1")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 		(layer "F.Cu")
@@ -8346,20 +7997,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
-			(at 0 0 -90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a3967eb6-608a-4912-80f6-2b1e28253220")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 -90)
+		(property "Datasheet" "~"
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c2736a5a-5166-44cd-9409-e4b5918d8b55")
@@ -8371,7 +8010,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6538ccd0-c892-441b-95c8-f251bbd45dca")
@@ -8384,9 +8023,9 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/88ae19c0-4ca5-424b-9518-ca64b1c15f82")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 0.23 1.07)
 			(end 4.77 1.07)
@@ -8558,6 +8197,7 @@
 			(pintype "passive")
 			(uuid "243491d0-003c-47db-a816-42cb1365dd75")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Disc_D4.3mm_W1.9mm_P5.00mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -8600,19 +8240,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:D3_TH_SMD_v3"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "4ff81d76-d237-4d65-8900-160195fe8051")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -8662,9 +8290,9 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/63eade50-6432-468b-abf7-4da7fdf50166")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -0.5 -0.5)
 			(end -0.5 0.5)
@@ -8719,7 +8347,7 @@
 		(pad "1" smd rect
 			(at -1.775 0 180)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 30 "ROW0")
 			(pinfunction "K")
 			(pintype "passive")
@@ -8728,7 +8356,7 @@
 		(pad "2" smd rect
 			(at 1.775 0 180)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 53 "Net-(D9-A)")
 			(pinfunction "A")
 			(pintype "passive")
@@ -8745,6 +8373,7 @@
 			(pintype "passive")
 			(uuid "67598447-382d-4659-8f6d-3795b2859d4d")
 		)
+		(embedded_fonts no)
 		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -8809,19 +8438,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:D3_TH_SMD_v3"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "0b04ab61-dca2-4b7c-93e1-b0b604beaa65")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -8871,9 +8488,9 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/198f8ff1-ba0b-4d7a-b21d-7934527dbb2f")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 0.5 0.5)
 			(end -0.4 0)
@@ -8928,7 +8545,7 @@
 		(pad "1" smd rect
 			(at -1.775 0)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 55 "ROW2")
 			(pinfunction "K")
 			(pintype "passive")
@@ -8937,7 +8554,7 @@
 		(pad "2" smd rect
 			(at 1.775 0)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 14 "Net-(D24-A)")
 			(pinfunction "A")
 			(pintype "passive")
@@ -8954,6 +8571,7 @@
 			(pintype "passive")
 			(uuid "153f32aa-6f32-4d92-b77d-95d28132c0cd")
 		)
+		(embedded_fonts no)
 		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -9014,19 +8632,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "87116951-1703-4568-9b99-86471d2c39b9")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -9051,9 +8657,9 @@
 			)
 		)
 		(path "/6ccc826a-ea1b-418b-a525-3e2a62a9accc")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -9.525 9.525)
 			(end -9.525 -9.525)
@@ -9178,7 +8784,7 @@
 			(at -5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "11567980-f59d-4cc6-aa70-3a386880df1b")
 		)
 		(pad "" np_thru_hole circle
@@ -9192,7 +8798,7 @@
 			(at 5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "510aa2ca-d73e-42c3-927b-a411309a870a")
 		)
 		(pad "1" thru_hole oval
@@ -9243,6 +8849,7 @@
 			(pintype "passive")
 			(uuid "829c0ee2-6040-4cfd-bc86-23856e5afbeb")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "kbd:D3_TH_SMD_v3"
 		(layer "F.Cu")
@@ -9274,19 +8881,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:D3_TH_SMD_v3"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ee726a4e-119c-406e-a061-129890bec994")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -9336,9 +8931,9 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/fc0748f1-342c-4c59-8589-f3314b200e95")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -0.5 -0.5)
 			(end -0.5 0.5)
@@ -9393,7 +8988,7 @@
 		(pad "1" smd rect
 			(at -1.775 0 180)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 56 "ROW3")
 			(pinfunction "K")
 			(pintype "passive")
@@ -9402,7 +8997,7 @@
 		(pad "2" smd rect
 			(at 1.775 0 180)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 35 "Net-(D38-A)")
 			(pinfunction "A")
 			(pintype "passive")
@@ -9419,6 +9014,7 @@
 			(pintype "passive")
 			(uuid "52068a3e-a305-4e14-9166-1f34aff5d369")
 		)
+		(embedded_fonts no)
 		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -9483,19 +9079,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:D3_TH_SMD_v3"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "589ad865-e204-46de-9f58-488f91936b28")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -9545,9 +9129,9 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/9e256261-bd42-425d-966e-a4ffc33604e4")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -0.5 -0.5)
 			(end -0.5 0.5)
@@ -9602,7 +9186,7 @@
 		(pad "1" smd rect
 			(at -1.775 0 180)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 55 "ROW2")
 			(pinfunction "K")
 			(pintype "passive")
@@ -9611,7 +9195,7 @@
 		(pad "2" smd rect
 			(at 1.775 0 180)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 19 "Net-(D29-A)")
 			(pinfunction "A")
 			(pintype "passive")
@@ -9628,6 +9212,7 @@
 			(pintype "passive")
 			(uuid "47b69528-f602-49f2-9767-0c73c4abca45")
 		)
+		(embedded_fonts no)
 		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -9691,20 +9276,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
-			(at 0 0 -90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "45f92350-4612-4c77-9930-75158eaa799f")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 -90)
+		(property "Datasheet" "~"
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6ed28a2e-e507-40ce-8583-e0d3257f919c")
@@ -9716,7 +9289,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0da90e18-1cfd-4e43-b6d9-0044d0ae48bd")
@@ -9729,9 +9302,9 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/31504ac0-7137-46ce-9763-f41430baf0e4")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 1.89 0.92)
 			(end 5.73 0.92)
@@ -9923,6 +9496,7 @@
 			(pintype "passive")
 			(uuid "cfee2147-9051-4394-9754-bd7c1e1e0f41")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -9961,19 +9535,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "0ab49ee7-ad69-4773-8ec5-e3bcfd41635a")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -9998,9 +9560,9 @@
 			)
 		)
 		(path "/2cec13ab-d43d-4a4f-8ac9-1d62bfcdadc4")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -9.525 9.525)
 			(end -9.525 -9.525)
@@ -10125,7 +9687,7 @@
 			(at -5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "5dbe51d8-9e22-4d33-b0a4-fa1c63442206")
 		)
 		(pad "" np_thru_hole circle
@@ -10139,7 +9701,7 @@
 			(at 5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "a98ff9b4-0504-48ac-86ad-64e5986e80a7")
 		)
 		(pad "1" thru_hole oval
@@ -10190,6 +9752,7 @@
 			(pintype "passive")
 			(uuid "8b645995-420a-46a8-a3ba-c33c303073d9")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
 		(layer "F.Cu")
@@ -10217,19 +9780,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "2c9ad714-b598-4794-b071-6fc2553298a6")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -10254,9 +9805,9 @@
 			)
 		)
 		(path "/99b2da56-b2af-43c0-8813-2c0ca1bee20e")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -9.525 9.525)
 			(end -9.525 -9.525)
@@ -10381,7 +9932,7 @@
 			(at -5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "763044ca-ca83-4094-999b-c5d93b67b9dd")
 		)
 		(pad "" np_thru_hole circle
@@ -10395,7 +9946,7 @@
 			(at 5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "ce3ebba9-61cb-4d24-a126-2c42d34a07eb")
 		)
 		(pad "1" thru_hole oval
@@ -10446,281 +9997,7 @@
 			(pintype "passive")
 			(uuid "83fe8b83-21bb-400c-bb40-590d01e4da9c")
 		)
-	)
-	(footprint "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
-		(layer "F.Cu")
-		(uuid "5d87e726-00fc-4368-a2fb-0193627e0a18")
-		(at 148.43125 18.0975 90)
-		(descr "Resistor, Axial_DIN0204 series, Axial, Horizontal, pin pitch=7.62mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
-		(tags "Resistor Axial_DIN0204 series Axial Horizontal pin pitch 7.62mm 0.167W length 3.6mm diameter 1.6mm")
-		(property "Reference" "R5"
-			(at 3.81 -1.92 90)
-			(layer "F.SilkS")
-			(uuid "c3f1f879-4912-466d-a5c7-ca670d64e866")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "5k1"
-			(at 3.81 1.92 90)
-			(layer "F.Fab")
-			(uuid "54fbf976-86c0-4424-91d7-c059661f4cb8")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "44ff2003-b0bb-40d0-9b29-775cdb5c39bf")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "2a2eb727-2f2d-412e-acca-88032bce69f2")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ddb81964-f030-440d-90cd-0f776c997a67")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property ki_fp_filters "R_*")
-		(path "/5bd8a4bb-2a5c-4673-a775-57c9157a04cc")
-		(sheetname "Root")
-		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
-		(fp_line
-			(start 5.73 -0.92)
-			(end 1.89 -0.92)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "665e5dd0-fa0c-4b80-972d-876263334cda")
-		)
-		(fp_line
-			(start 1.89 -0.92)
-			(end 1.89 0.92)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "03ca29f1-20ed-4b4c-9f81-f119e8eebb91")
-		)
-		(fp_line
-			(start 6.68 0)
-			(end 5.73 0)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "f5b0ec76-9528-4c86-b9bd-5138be1cfacd")
-		)
-		(fp_line
-			(start 0.94 0)
-			(end 1.89 0)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "331dca92-d08a-475a-9727-aaedb84edf5f")
-		)
-		(fp_line
-			(start 5.73 0.92)
-			(end 5.73 -0.92)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "8efc9632-6156-4c3e-8997-ca000124e973")
-		)
-		(fp_line
-			(start 1.89 0.92)
-			(end 5.73 0.92)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "a663d6d5-3057-4ae9-aba9-c5023240fedf")
-		)
-		(fp_line
-			(start 8.57 -1.05)
-			(end -0.95 -1.05)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "9d4de056-2d0f-408d-84eb-3dbeb8a1a047")
-		)
-		(fp_line
-			(start -0.95 -1.05)
-			(end -0.95 1.05)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "9537bd43-c8e8-485a-80c5-57be15eea475")
-		)
-		(fp_line
-			(start 8.57 1.05)
-			(end 8.57 -1.05)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "2ac39d04-8545-4c86-839b-941334f5eafb")
-		)
-		(fp_line
-			(start -0.95 1.05)
-			(end 8.57 1.05)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "f3c5d3be-1304-4d31-a251-b34958785b7c")
-		)
-		(fp_line
-			(start 5.61 -0.8)
-			(end 2.01 -0.8)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "20c8c1f2-a003-4ed5-9ebf-722008de0a97")
-		)
-		(fp_line
-			(start 2.01 -0.8)
-			(end 2.01 0.8)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "7838b947-b7af-422b-83f2-2f4cf6119a13")
-		)
-		(fp_line
-			(start 7.62 0)
-			(end 5.61 0)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "da733787-4c91-45b6-9852-39595b236690")
-		)
-		(fp_line
-			(start 0 0)
-			(end 2.01 0)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "5b56ab1b-d696-4ad1-a700-e6fe60a0291a")
-		)
-		(fp_line
-			(start 5.61 0.8)
-			(end 5.61 -0.8)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "ac35b96c-bb55-4d55-9920-bcad39f9c47c")
-		)
-		(fp_line
-			(start 2.01 0.8)
-			(end 5.61 0.8)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "2b096131-35a8-404f-80d3-1bdee725f4ee")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 3.81 0 90)
-			(layer "F.Fab")
-			(uuid "34f5f4f1-c0d1-4b7b-b7b1-ffa0314a31b7")
-			(effects
-				(font
-					(size 0.72 0.72)
-					(thickness 0.108)
-				)
-			)
-		)
-		(pad "1" thru_hole circle
-			(at 0 0 90)
-			(size 1.4 1.4)
-			(drill 0.7)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net 104 "RGB MCU")
-			(pintype "passive")
-			(uuid "7eeb4e51-4334-4951-8c60-03a41f2fbbb8")
-		)
-		(pad "2" thru_hole oval
-			(at 7.62 0 90)
-			(size 1.4 1.4)
-			(drill 0.7)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net 102 "RGBin")
-			(pintype "passive")
-			(uuid "64c2400a-1674-4ee0-a600-e7c19af24b64")
-		)
-		(model "${KICAD8_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal.wrl"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
+		(embedded_fonts no)
 	)
 	(footprint "kbd:D3_TH_SMD_v3"
 		(layer "F.Cu")
@@ -10752,19 +10029,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:D3_TH_SMD_v3"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "1d57653d-4511-473f-9f1e-11c981ab3215")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -10814,9 +10079,9 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/86233c08-37b1-487a-b6df-360745af4c30")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -0.5 -0.5)
 			(end -0.5 0.5)
@@ -10871,7 +10136,7 @@
 		(pad "1" smd rect
 			(at -1.775 0 180)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 54 "ROW1")
 			(pinfunction "K")
 			(pintype "passive")
@@ -10880,7 +10145,7 @@
 		(pad "2" smd rect
 			(at 1.775 0 180)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 8 "Net-(D18-A)")
 			(pinfunction "A")
 			(pintype "passive")
@@ -10897,6 +10162,7 @@
 			(pintype "passive")
 			(uuid "d0ba505c-8359-469b-9a15-9d21a8d6e01e")
 		)
+		(embedded_fonts no)
 		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -10957,19 +10223,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "b664f5fc-4a61-4b94-9647-35f3ae7ea8f3")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -10994,9 +10248,9 @@
 			)
 		)
 		(path "/dfaef248-7586-46fc-8ff7-e19a4679b2e1")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -9.525 9.525)
 			(end -9.525 -9.525)
@@ -11121,7 +10375,7 @@
 			(at -5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "a76fec57-21cc-430d-84a0-b3686160a209")
 		)
 		(pad "" np_thru_hole circle
@@ -11135,7 +10389,7 @@
 			(at 5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "44ff6c0d-79d2-413a-a8d8-74b65c74d3c9")
 		)
 		(pad "1" thru_hole oval
@@ -11186,6 +10440,7 @@
 			(pintype "passive")
 			(uuid "0becaa00-b542-47fb-89d2-20d6da99a013")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "kbd:D3_TH_SMD_v3"
 		(layer "F.Cu")
@@ -11217,19 +10472,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:D3_TH_SMD_v3"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "0a1850a6-9d5a-4e3f-95c7-47657596fefd")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -11279,9 +10522,9 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/ff168f42-9333-447a-adf1-5bd0276fa1c7")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -0.5 -0.5)
 			(end -0.5 0.5)
@@ -11336,7 +10579,7 @@
 		(pad "1" smd rect
 			(at -1.775 0 180)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 30 "ROW0")
 			(pinfunction "K")
 			(pintype "passive")
@@ -11345,7 +10588,7 @@
 		(pad "2" smd rect
 			(at 1.775 0 180)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 36 "Net-(D7-A)")
 			(pinfunction "A")
 			(pintype "passive")
@@ -11362,6 +10605,7 @@
 			(pintype "passive")
 			(uuid "b60d75eb-c683-42f3-b8e2-d611823388b2")
 		)
+		(embedded_fonts no)
 		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -11426,19 +10670,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:D3_TH_SMD_v3"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d3da4d39-c60b-493b-b8a8-06e862f3dedd")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -11488,9 +10720,9 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/f5c1bbae-451f-4504-854e-eb1be6a65ae2")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 0.5 0.5)
 			(end -0.4 0)
@@ -11545,7 +10777,7 @@
 		(pad "1" smd rect
 			(at -1.775 0)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 56 "ROW3")
 			(pinfunction "K")
 			(pintype "passive")
@@ -11554,7 +10786,7 @@
 		(pad "2" smd rect
 			(at 1.775 0)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 27 "Net-(D34-A)")
 			(pinfunction "A")
 			(pintype "passive")
@@ -11571,6 +10803,7 @@
 			(pintype "passive")
 			(uuid "0a9c8e81-7c82-4114-ac24-2168679a2f5d")
 		)
+		(embedded_fonts no)
 		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -11635,19 +10868,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:D3_TH_SMD_v3"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "3409f8f3-92c9-4d2c-85b8-8efb6643605a")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -11697,9 +10918,9 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/9813dcee-9a99-4027-921a-f4dfde5803da")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -0.5 -0.5)
 			(end -0.5 0.5)
@@ -11754,7 +10975,7 @@
 		(pad "1" smd rect
 			(at -1.775 0 180)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 54 "ROW1")
 			(pinfunction "K")
 			(pintype "passive")
@@ -11763,7 +10984,7 @@
 		(pad "2" smd rect
 			(at 1.775 0 180)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 10 "Net-(D20-A)")
 			(pinfunction "A")
 			(pintype "passive")
@@ -11780,6 +11001,7 @@
 			(pintype "passive")
 			(uuid "4d375528-dc3f-42c7-83ab-57b853410f6e")
 		)
+		(embedded_fonts no)
 		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -11840,19 +11062,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "79db306c-8439-483a-8864-ead359aaa457")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -11877,9 +11087,9 @@
 			)
 		)
 		(path "/54b32c30-2956-49b8-b589-5d6de1fa4d66")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -9.525 9.525)
 			(end -9.525 -9.525)
@@ -12004,7 +11214,7 @@
 			(at -5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "6c8ce8be-d79d-4a76-8054-09b19a7aabd8")
 		)
 		(pad "" np_thru_hole circle
@@ -12018,7 +11228,7 @@
 			(at 5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "62775011-540d-435e-81e2-7e56d1e8573e")
 		)
 		(pad "1" thru_hole oval
@@ -12069,6 +11279,7 @@
 			(pintype "passive")
 			(uuid "b79196b9-56f1-4a2e-abf4-9bfeffb6d38a")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "kbd:D3_TH_SMD_v3"
 		(layer "F.Cu")
@@ -12100,19 +11311,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:D3_TH_SMD_v3"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "6dc6622c-4a9d-4e6c-ac6a-9f87b6846c29")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -12162,9 +11361,9 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/5be5d98a-d359-4a86-ac82-42ac326023c4")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 0.5 0.5)
 			(end -0.4 0)
@@ -12219,7 +11418,7 @@
 		(pad "1" smd rect
 			(at -1.775 0)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 54 "ROW1")
 			(pinfunction "K")
 			(pintype "passive")
@@ -12228,7 +11427,7 @@
 		(pad "2" smd rect
 			(at 1.775 0)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 3 "Net-(D13-A)")
 			(pinfunction "A")
 			(pintype "passive")
@@ -12245,6 +11444,7 @@
 			(pintype "passive")
 			(uuid "c2fcac8e-7775-484b-a81a-b3d20b48b620")
 		)
+		(embedded_fonts no)
 		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -12308,19 +11508,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-15_P10.16mm_Horizontal"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "78fbf7d1-3f34-4c94-b776-ec21fcfb5003")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -12346,9 +11534,9 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/40d75f10-f0da-4f2a-a4cb-0487cdb16373")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 1.16 -1.92)
 			(end 9 -1.92)
@@ -12583,6 +11771,7 @@
 			(pintype "passive")
 			(uuid "f74d8922-123e-450c-a7f6-28926624e368")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Diode_THT.3dshapes/D_DO-15_P10.16mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -12625,19 +11814,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:D3_TH_SMD_v3"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "29632d10-6097-41be-9810-b263e40f204b")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -12687,9 +11864,9 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/5915bd1c-d4e0-48d9-8645-e36a4e060e28")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 0.5 0.5)
 			(end -0.4 0)
@@ -12744,7 +11921,7 @@
 		(pad "1" smd rect
 			(at -1.775 0)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 54 "ROW1")
 			(pinfunction "K")
 			(pintype "passive")
@@ -12753,7 +11930,7 @@
 		(pad "2" smd rect
 			(at 1.775 0)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 5 "Net-(D15-A)")
 			(pinfunction "A")
 			(pintype "passive")
@@ -12770,6 +11947,7 @@
 			(pintype "passive")
 			(uuid "a0f005b3-c815-4570-be38-b649f02e16f8")
 		)
+		(embedded_fonts no)
 		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -12830,19 +12008,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "4edd0484-8589-4652-a5dc-fc81d316d125")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -12867,9 +12033,9 @@
 			)
 		)
 		(path "/9824c2e2-18ab-4610-b100-96f91ac9f92b")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -9.525 9.525)
 			(end -9.525 -9.525)
@@ -12994,7 +12160,7 @@
 			(at -5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "89e9e67f-8129-4cf6-b2ed-9c29eb685c0d")
 		)
 		(pad "" np_thru_hole circle
@@ -13008,7 +12174,7 @@
 			(at 5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "80c5719f-20ba-4d5a-b9a5-99a7e54a1e9d")
 		)
 		(pad "1" thru_hole oval
@@ -13059,6 +12225,7 @@
 			(pintype "passive")
 			(uuid "803dff6a-482c-4afc-8d6c-547c922f08e6")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "kbd:D3_TH_SMD_v3"
 		(layer "F.Cu")
@@ -13090,19 +12257,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:D3_TH_SMD_v3"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "5c7a47f7-72b6-4c87-90ff-6e34049a237e")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -13152,9 +12307,9 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/3aa0066c-8b4e-4990-b48a-f00b9f22a4e6")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 0.5 0.5)
 			(end -0.4 0)
@@ -13209,7 +12364,7 @@
 		(pad "1" smd rect
 			(at -1.775 0)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 56 "ROW3")
 			(pinfunction "K")
 			(pintype "passive")
@@ -13218,7 +12373,7 @@
 		(pad "2" smd rect
 			(at 1.775 0)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 25 "Net-(D33-A)")
 			(pinfunction "A")
 			(pintype "passive")
@@ -13235,6 +12390,7 @@
 			(pintype "passive")
 			(uuid "84292166-d4d4-482c-86de-93343ec836c1")
 		)
+		(embedded_fonts no)
 		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -13299,19 +12455,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:D3_TH_SMD_v3"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "20dc84b5-7545-434a-954b-5b96b0f17f5a")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -13361,9 +12505,9 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/db3acb66-5302-49e6-b93c-51b5f3608bd3")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -0.5 -0.5)
 			(end -0.5 0.5)
@@ -13418,7 +12562,7 @@
 		(pad "1" smd rect
 			(at -1.775 0 180)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 30 "ROW0")
 			(pinfunction "K")
 			(pintype "passive")
@@ -13427,7 +12571,7 @@
 		(pad "2" smd rect
 			(at 1.775 0 180)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 40 "Net-(D10-A)")
 			(pinfunction "A")
 			(pintype "passive")
@@ -13444,6 +12588,7 @@
 			(pintype "passive")
 			(uuid "09d25390-76b4-4380-b1e1-2a8003826016")
 		)
+		(embedded_fonts no)
 		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -13508,19 +12653,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:D3_TH_SMD_v3"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "e6918dde-6f5c-44b8-9ed7-ff6d1a0a3a40")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -13570,9 +12703,9 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/75a8d7e6-4705-4bed-af9a-1f96238ed891")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -0.5 -0.5)
 			(end -0.5 0.5)
@@ -13627,7 +12760,7 @@
 		(pad "1" smd rect
 			(at -1.775 0 180)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 56 "ROW3")
 			(pinfunction "K")
 			(pintype "passive")
@@ -13636,7 +12769,7 @@
 		(pad "2" smd rect
 			(at 1.775 0 180)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 31 "Net-(D36-A)")
 			(pinfunction "A")
 			(pintype "passive")
@@ -13653,6 +12786,7 @@
 			(pintype "passive")
 			(uuid "1b670f04-ca69-479a-bb98-b8f9373d2869")
 		)
+		(embedded_fonts no)
 		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -13713,19 +12847,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ebe1da5c-7576-4ae5-a37a-23b5ee30f6e9")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -13750,9 +12872,9 @@
 			)
 		)
 		(path "/2459a358-03ae-485c-8d9b-0f25717fa044")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -9.525 9.525)
 			(end -9.525 -9.525)
@@ -13877,7 +12999,7 @@
 			(at -5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "194ce203-608c-43ce-bd9d-5cb8bc8afa18")
 		)
 		(pad "" np_thru_hole circle
@@ -13891,7 +13013,7 @@
 			(at 5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "e9c1c1d2-3045-4e86-a721-a9efa45fe712")
 		)
 		(pad "1" thru_hole oval
@@ -13942,6 +13064,7 @@
 			(pintype "passive")
 			(uuid "fa05d033-38b7-4d51-9a34-3fd1e8d85860")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "kbd:D3_TH_SMD_v3"
 		(layer "F.Cu")
@@ -13973,19 +13096,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:D3_TH_SMD_v3"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "64913c89-5320-4c14-bae1-e8ff23b3b60d")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -14035,9 +13146,9 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/106bf3e2-99f3-49af-aafc-f8086999737f")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -0.5 -0.5)
 			(end -0.5 0.5)
@@ -14092,7 +13203,7 @@
 		(pad "1" smd rect
 			(at -1.775 0 180)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 54 "ROW1")
 			(pinfunction "K")
 			(pintype "passive")
@@ -14101,7 +13212,7 @@
 		(pad "2" smd rect
 			(at 1.775 0 180)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 9 "Net-(D19-A)")
 			(pinfunction "A")
 			(pintype "passive")
@@ -14118,6 +13229,7 @@
 			(pintype "passive")
 			(uuid "85feae3b-a49f-49b1-9514-7b20165987e3")
 		)
+		(embedded_fonts no)
 		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -14180,18 +13292,6 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "22fd4eea-f94f-40c4-a2dd-99eb92d133d4")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -14227,7 +13327,7 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.SilkS")
 			(uuid "6f27a540-b5af-4d7a-9a2c-d3f15fe6f518")
 		)
@@ -14242,7 +13342,7 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.SilkS")
 			(uuid "9a98666b-56aa-41d1-897b-b77c60b7fdb3")
 		)
@@ -14264,7 +13364,7 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.SilkS")
 			(uuid "b1fef4c3-323c-4cef-9828-4de9e50205f5")
 		)
@@ -14293,7 +13393,7 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.SilkS")
 			(uuid "045cc0d2-3127-4f1e-aa94-7a68d7818039")
 		)
@@ -14326,7 +13426,7 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.SilkS")
 			(uuid "623f3b2a-15a6-443d-957c-c00a56ce8605")
 		)
@@ -14358,7 +13458,7 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.SilkS")
 			(uuid "3193b2b2-5fcb-49ac-a014-3858132cd389")
 		)
@@ -14390,7 +13490,7 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.SilkS")
 			(uuid "ef1f5943-60ca-408c-bde1-7a5ee5a5de1e")
 		)
@@ -14431,7 +13531,7 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.SilkS")
 			(uuid "e3aad670-ca9b-4542-b6e9-2d95e32e970c")
 		)
@@ -14477,10 +13577,11 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.SilkS")
 			(uuid "24de0656-b55d-47ee-aeaa-2b5f595c08d3")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "kbd:D3_TH_SMD_v3"
 		(layer "F.Cu")
@@ -14512,19 +13613,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:D3_TH_SMD_v3"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "16f00475-7543-4956-bac7-f428eea1b4f1")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -14574,9 +13663,9 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/cc7ad4fb-d3fe-42a4-ac25-4c5461c639a6")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 0.5 0.5)
 			(end -0.4 0)
@@ -14631,7 +13720,7 @@
 		(pad "1" smd rect
 			(at -1.775 0)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 30 "ROW0")
 			(pinfunction "K")
 			(pintype "passive")
@@ -14640,7 +13729,7 @@
 		(pad "2" smd rect
 			(at 1.775 0)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 32 "Net-(D5-A)")
 			(pinfunction "A")
 			(pintype "passive")
@@ -14657,6 +13746,7 @@
 			(pintype "passive")
 			(uuid "daa42829-7782-4f6e-9dbc-be5587eb2d6c")
 		)
+		(embedded_fonts no)
 		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -14720,18 +13810,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f984041f-517c-4261-bc0d-4c7ca4aed7b1")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf"
 			(at 0 0 180)
 			(layer "F.Fab")
@@ -14758,9 +13836,9 @@
 		)
 		(property ki_fp_filters "TO?92*")
 		(path "/a7cddeb4-1d5a-4e3d-9904-5aeeed3279c2")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -0.53 1.85)
 			(end 3.07 1.85)
@@ -14909,6 +13987,7 @@
 			(pintype "power_in")
 			(uuid "d157af3d-eade-4f3e-a39b-2aeb2a65e89e")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Package_TO_SOT_THT.3dshapes/TO-92_Inline.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -14946,18 +14025,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c02b4e5a-ed90-4327-a4de-48e7ca713bd3")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -15012,9 +14079,9 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/53672b0c-c371-424f-b45d-2aaaca018a7b")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 4.77 -1.07)
 			(end 4.77 -1.055)
@@ -15186,6 +14253,7 @@
 			(pintype "passive")
 			(uuid "d98c5634-0881-4b60-8e4f-b6c150ecfe70")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Disc_D4.3mm_W1.9mm_P5.00mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -15226,18 +14294,6 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-mx:STAB_MX_P_3u"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "8a485117-b75d-409b-8135-b07c5e761893")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 180)
 			(layer "F.Fab")
@@ -15263,9 +14319,9 @@
 			)
 		)
 		(path "/40011eb4-bf59-4723-8f27-50a59f12f657")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 28.575 -9.525)
 			(end 28.575 9.525)
@@ -15600,6 +14656,7 @@
 				"cc9e4437-652a-45f9-a55a-023dfbb565e2" "ddbdb18f-203a-4158-a011-10ae41adb6f1"
 			)
 		)
+		(embedded_fonts no)
 	)
 	(footprint "kbd:D3_TH_SMD_v3"
 		(layer "F.Cu")
@@ -15631,19 +14688,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:D3_TH_SMD_v3"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "93664935-6a2e-4517-9d89-5a4288a5acaa")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -15693,9 +14738,9 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/73122558-b02e-48c7-9e61-6542955fc9c5")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 0.5 0.5)
 			(end -0.4 0)
@@ -15750,7 +14795,7 @@
 		(pad "1" smd rect
 			(at -1.775 0)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 55 "ROW2")
 			(pinfunction "K")
 			(pintype "passive")
@@ -15759,7 +14804,7 @@
 		(pad "2" smd rect
 			(at 1.775 0)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 13 "Net-(D23-A)")
 			(pinfunction "A")
 			(pintype "passive")
@@ -15776,6 +14821,7 @@
 			(pintype "passive")
 			(uuid "ec911fda-c0fd-4524-9e1b-415dcec05d62")
 		)
+		(embedded_fonts no)
 		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -15836,19 +14882,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "4e2997dd-1757-43e9-95f9-e17dad84c3df")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -15873,9 +14907,9 @@
 			)
 		)
 		(path "/59bc132d-98aa-43ab-98b9-368ec643dca1")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -9.525 9.525)
 			(end -9.525 -9.525)
@@ -16000,7 +15034,7 @@
 			(at -5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "5b251ae5-bfdb-4afb-af6c-2b6f852ddc73")
 		)
 		(pad "" np_thru_hole circle
@@ -16014,7 +15048,7 @@
 			(at 5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "99fdd915-8622-4897-af90-679c9ce426a6")
 		)
 		(pad "1" thru_hole oval
@@ -16065,6 +15099,7 @@
 			(pintype "passive")
 			(uuid "5c1c9d9b-b2f2-41c6-ac8f-36603e23d023")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "kbd:D3_TH_SMD_v3"
 		(layer "F.Cu")
@@ -16096,19 +15131,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:D3_TH_SMD_v3"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "41e94273-c4f6-4c7e-8ee5-5116455d548d")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -16158,9 +15181,9 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/3fe8c8c0-bb59-40b4-a50e-f6e576236454")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -0.5 -0.5)
 			(end -0.5 0.5)
@@ -16215,7 +15238,7 @@
 		(pad "1" smd rect
 			(at -1.775 0 180)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 55 "ROW2")
 			(pinfunction "K")
 			(pintype "passive")
@@ -16224,7 +15247,7 @@
 		(pad "2" smd rect
 			(at 1.775 0 180)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 17 "Net-(D27-A)")
 			(pinfunction "A")
 			(pintype "passive")
@@ -16241,6 +15264,7 @@
 			(pintype "passive")
 			(uuid "f5f2cd77-c256-4028-8309-5f1f523f17ed")
 		)
+		(embedded_fonts no)
 		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -16305,19 +15329,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:D3_TH_SMD_v3"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "8784c034-74c4-48ea-bfdd-21f14db1453f")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -16367,9 +15379,9 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/cbd3a06d-1d24-445d-bf92-feae48bfdc74")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 0.5 0.5)
 			(end -0.4 0)
@@ -16424,7 +15436,7 @@
 		(pad "1" smd rect
 			(at -1.775 0)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 30 "ROW0")
 			(pinfunction "K")
 			(pintype "passive")
@@ -16433,7 +15445,7 @@
 		(pad "2" smd rect
 			(at 1.775 0)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 24 "Net-(D2-A)")
 			(pinfunction "A")
 			(pintype "passive")
@@ -16450,6 +15462,7 @@
 			(pintype "passive")
 			(uuid "1744ec6c-bb82-4d8f-820e-134f1036f456")
 		)
+		(embedded_fonts no)
 		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -16513,19 +15526,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "4ddb3047-0dc1-4d8c-a90e-576eaea439c6")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -16563,9 +15564,9 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/fc83e856-12ea-4e4b-b544-c4c00c2ed178")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 0.23 -1.07)
 			(end 0.23 -1.055)
@@ -16737,6 +15738,7 @@
 			(pintype "passive")
 			(uuid "bee952ef-ca7c-49bc-a06b-30b670df3e62")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Disc_D4.3mm_W1.9mm_P5.00mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -16774,18 +15776,6 @@
 				(font
 					(size 1.5 1.5)
 					(thickness 0.3)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "688263b7-d077-40a8-868b-33f00ac42626")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
 				)
 			)
 		)
@@ -17241,10 +16231,11 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.SilkS")
 			(uuid "1201f936-ef9a-4780-a376-5a18d8dbf156")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
 		(layer "F.Cu")
@@ -17272,19 +16263,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "76b714cf-bfbe-445f-a243-3e94babf2940")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -17309,9 +16288,9 @@
 			)
 		)
 		(path "/8267b982-56b2-46e4-b580-1313700e9b2d")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -9.525 9.525)
 			(end -9.525 -9.525)
@@ -17436,7 +16415,7 @@
 			(at -5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "5c15339e-4e7f-434e-a84e-4ab1f51fc955")
 		)
 		(pad "" np_thru_hole circle
@@ -17450,7 +16429,7 @@
 			(at 5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "961dc432-c12d-4a0c-b863-e692cb478d18")
 		)
 		(pad "1" thru_hole oval
@@ -17501,6 +16480,7 @@
 			(pintype "passive")
 			(uuid "50410138-2ba8-4356-a346-dabc47f4930b")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "kbd:D3_TH_SMD_v3"
 		(layer "F.Cu")
@@ -17532,19 +16512,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:D3_TH_SMD_v3"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "9f337853-faed-4748-8c4a-0ed6ac04c8a5")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -17594,9 +16562,9 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/54240581-395c-4e20-85b0-35a7633046ca")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -0.5 -0.5)
 			(end -0.5 0.5)
@@ -17651,7 +16619,7 @@
 		(pad "1" smd rect
 			(at -1.775 0 180)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 56 "ROW3")
 			(pinfunction "K")
 			(pintype "passive")
@@ -17660,7 +16628,7 @@
 		(pad "2" smd rect
 			(at 1.775 0 180)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 37 "Net-(D39-A)")
 			(pinfunction "A")
 			(pintype "passive")
@@ -17677,6 +16645,7 @@
 			(pintype "passive")
 			(uuid "de242a35-e270-4559-874c-9e90b18f957d")
 		)
+		(embedded_fonts no)
 		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -17741,19 +16710,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:D3_TH_SMD_v3"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c82791e0-3dd2-483b-ab7b-1b653d00ad77")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -17803,9 +16760,9 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/c359eef5-3fd6-4314-921f-0cbb6483beb8")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -0.5 -0.5)
 			(end -0.5 0.5)
@@ -17860,7 +16817,7 @@
 		(pad "1" smd rect
 			(at -1.775 0 180)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 54 "ROW1")
 			(pinfunction "K")
 			(pintype "passive")
@@ -17869,7 +16826,7 @@
 		(pad "2" smd rect
 			(at 1.775 0 180)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 7 "Net-(D17-A)")
 			(pinfunction "A")
 			(pintype "passive")
@@ -17886,6 +16843,7 @@
 			(pintype "passive")
 			(uuid "52ea985e-8fd9-44ab-9855-f52c3f2f00bf")
 		)
+		(embedded_fonts no)
 		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -17946,19 +16904,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "2d6f408b-bee4-47e8-81ae-ea5bc74239b0")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -17983,9 +16929,9 @@
 			)
 		)
 		(path "/95f372bb-fbc9-41cf-8fa4-b65e08bbad83")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -9.525 9.525)
 			(end -9.525 -9.525)
@@ -18110,7 +17056,7 @@
 			(at -5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "4ec3ee61-c969-4ee5-b566-25d7ad22387e")
 		)
 		(pad "" np_thru_hole circle
@@ -18124,7 +17070,7 @@
 			(at 5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "aa4f9e6a-f9aa-4839-b9fc-9932d528e2e7")
 		)
 		(pad "1" thru_hole oval
@@ -18175,6 +17121,7 @@
 			(pintype "passive")
 			(uuid "097b83ff-a183-49b7-9eeb-d6f236c1e2a9")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "PCM_marbastlib-mx:STAB_MX_P_2u"
 		(layer "F.Cu")
@@ -18204,18 +17151,6 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-mx:STAB_MX_P_2u"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "e18904e1-a659-42bd-9fd5-5b7deabe05d6")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 180)
 			(layer "F.Fab")
@@ -18241,9 +17176,9 @@
 			)
 		)
 		(path "/37b1fd85-2e78-42bf-b87f-76d1ab8a0801")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 19.05 -9.525)
 			(end 19.05 9.525)
@@ -18578,6 +17513,7 @@
 				"c5aa529c-e2c6-40a1-b6c8-04fa59dce76f" "cdf9ad5e-7ae0-4e44-a9d9-f2a806376e84"
 			)
 		)
+		(embedded_fonts no)
 	)
 	(footprint "kbd:D3_TH_SMD_v3"
 		(layer "F.Cu")
@@ -18609,19 +17545,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:D3_TH_SMD_v3"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "33909b5e-3073-4ea4-ab1f-60633b982ab9")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -18671,9 +17595,9 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/d8b26ca4-b80e-4b1f-9afc-e85bd443164c")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -0.5 -0.5)
 			(end -0.5 0.5)
@@ -18728,7 +17652,7 @@
 		(pad "1" smd rect
 			(at -1.775 0 180)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 56 "ROW3")
 			(pinfunction "K")
 			(pintype "passive")
@@ -18737,7 +17661,7 @@
 		(pad "2" smd rect
 			(at 1.775 0 180)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 39 "Net-(D40-A)")
 			(pinfunction "A")
 			(pintype "passive")
@@ -18754,6 +17678,7 @@
 			(pintype "passive")
 			(uuid "e47507ee-f6fc-4803-b2bf-f24997f28e1c")
 		)
+		(embedded_fonts no)
 		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -18814,19 +17739,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "e0a6b323-dea2-4694-8173-302fb36c6193")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -18851,9 +17764,9 @@
 			)
 		)
 		(path "/a719f0f8-ca60-4663-9f37-39e537ecc408")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -9.525 9.525)
 			(end -9.525 -9.525)
@@ -18978,7 +17891,7 @@
 			(at -5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "2cbdbfc8-1f0c-48c1-954a-7d3ac84213f7")
 		)
 		(pad "" np_thru_hole circle
@@ -18992,7 +17905,7 @@
 			(at 5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "848c6091-a504-4eea-b7d5-c71bc76d4bb8")
 		)
 		(pad "1" thru_hole oval
@@ -19043,6 +17956,7 @@
 			(pintype "passive")
 			(uuid "90979998-3ebc-4378-8ed9-3e6248fd2100")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "kbd:D3_TH_SMD_v3"
 		(layer "F.Cu")
@@ -19074,19 +17988,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:D3_TH_SMD_v3"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f1edf35a-35b8-4ebc-9b45-1013698fc8d1")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -19136,9 +18038,9 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/3e764a7d-4a23-409d-8b6f-695841ab0cea")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 0.5 0.5)
 			(end -0.4 0)
@@ -19193,7 +18095,7 @@
 		(pad "1" smd rect
 			(at -1.775 0)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 30 "ROW0")
 			(pinfunction "K")
 			(pintype "passive")
@@ -19202,7 +18104,7 @@
 		(pad "2" smd rect
 			(at 1.775 0)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 22 "Net-(D1-A)")
 			(pinfunction "A")
 			(pintype "passive")
@@ -19219,6 +18121,7 @@
 			(pintype "passive")
 			(uuid "ee589a1d-2b4c-42d6-b7e2-432d156a638a")
 		)
+		(embedded_fonts no)
 		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -19282,19 +18185,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "80e6c30f-323f-49a1-9d10-4d3390e6a1d4")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -19320,9 +18211,9 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/889248b5-095a-41b8-a55b-b10184936156")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 0.94 0)
 			(end 1.89 0)
@@ -19514,6 +18405,7 @@
 			(pintype "passive")
 			(uuid "3b0c576f-d44b-4be1-972a-bf1d8c6b1c38")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -19556,19 +18448,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:D3_TH_SMD_v3"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "318dd545-2983-42f8-83fd-5a1ff81190b5")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -19618,9 +18498,9 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/af0ae1f3-39d8-40e8-b715-96727361fbaa")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -0.5 -0.5)
 			(end -0.5 0.5)
@@ -19675,7 +18555,7 @@
 		(pad "1" smd rect
 			(at -1.775 0 180)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 55 "ROW2")
 			(pinfunction "K")
 			(pintype "passive")
@@ -19684,7 +18564,7 @@
 		(pad "2" smd rect
 			(at 1.775 0 180)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 20 "Net-(D30-A)")
 			(pinfunction "A")
 			(pintype "passive")
@@ -19701,6 +18581,7 @@
 			(pintype "passive")
 			(uuid "8f803b16-bc9d-46f7-b85b-4b63c4e14577")
 		)
+		(embedded_fonts no)
 		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -19764,19 +18645,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "50e2b149-2616-499d-b275-03831fc74d5f")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -19814,9 +18683,9 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/ac61d4f9-b790-4db0-a891-900d93d7ab41")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 4.77 1.055)
 			(end 4.77 1.07)
@@ -19988,6 +18857,7 @@
 			(pintype "passive")
 			(uuid "c744116e-685e-4400-9025-b3e9a33079ad")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Disc_D4.3mm_W1.9mm_P5.00mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -20026,19 +18896,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d00283f4-2e89-4e96-99ff-53e0d156213e")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -20063,9 +18921,9 @@
 			)
 		)
 		(path "/2e82b81e-1e86-47ba-b9b8-13fa0c378773")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -9.525 9.525)
 			(end -9.525 -9.525)
@@ -20190,7 +19048,7 @@
 			(at -5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "f2f21051-74c4-4621-82e5-f4f570f3bf18")
 		)
 		(pad "" np_thru_hole circle
@@ -20204,7 +19062,7 @@
 			(at 5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "8b5e7b66-a943-417b-bb1c-45d9c35f68c0")
 		)
 		(pad "1" thru_hole oval
@@ -20255,6 +19113,7 @@
 			(pintype "passive")
 			(uuid "907abafa-0cdb-4796-8533-0939ba1c1dfb")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Package_TO_SOT_SMD:TSOT-23-5_HandSoldering"
 		(layer "F.Cu")
@@ -20281,18 +19140,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-5_HandSoldering"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "1264ca47-dda3-43c0-8cae-93a94c203925")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -20347,7 +19194,7 @@
 		)
 		(property ki_fp_filters "SOT* SG-*")
 		(path "/6ff75baf-6cda-4e62-a088-d51613c48d7a")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -20474,7 +19321,7 @@
 		(pad "1" smd rect
 			(at -1.71 -0.95 90)
 			(size 2 0.65)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 42 "GND")
 			(pintype "input")
 			(uuid "9c184fc6-b264-4d53-9062-c28259839118")
@@ -20482,7 +19329,7 @@
 		(pad "2" smd rect
 			(at -1.71 0 90)
 			(size 2 0.65)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 104 "RGB MCU")
 			(pintype "input")
 			(uuid "84172380-752d-49c2-94f0-f156f21d150c")
@@ -20490,7 +19337,7 @@
 		(pad "3" smd rect
 			(at -1.71 0.95 90)
 			(size 2 0.65)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 42 "GND")
 			(pinfunction "GND")
 			(pintype "power_in")
@@ -20499,7 +19346,7 @@
 		(pad "4" smd rect
 			(at 1.71 0.95 90)
 			(size 2 0.65)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 102 "RGBin")
 			(pintype "tri_state")
 			(uuid "df081765-f016-49e9-a653-b502ce9de985")
@@ -20507,12 +19354,13 @@
 		(pad "5" smd rect
 			(at 1.71 -0.95 90)
 			(size 2 0.65)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 44 "+5V")
 			(pinfunction "+5V")
 			(pintype "power_in")
 			(uuid "9aa18d06-defb-43d1-a392-e052c0a9bb3b")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/TSOT-23-5.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -20555,19 +19403,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:D3_TH_SMD_v3"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "b5e3b2d9-b92e-418a-9a01-6de998bb294b")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -20617,9 +19453,9 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/dd54fd2b-fe5e-4b77-847c-ac0a7ddfeac8")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 0.5 0.5)
 			(end -0.4 0)
@@ -20674,7 +19510,7 @@
 		(pad "1" smd rect
 			(at -1.775 0)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 56 "ROW3")
 			(pinfunction "K")
 			(pintype "passive")
@@ -20683,7 +19519,7 @@
 		(pad "2" smd rect
 			(at 1.775 0)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 21 "Net-(D31-A)")
 			(pinfunction "A")
 			(pintype "passive")
@@ -20700,6 +19536,7 @@
 			(pintype "passive")
 			(uuid "dfcf8099-f499-4d65-b3bf-311a6c979bdb")
 		)
+		(embedded_fonts no)
 		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -20760,19 +19597,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "beac6f31-27b5-41fb-9fd7-70cbc85ae430")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -20797,9 +19622,9 @@
 			)
 		)
 		(path "/b991a277-909b-43ea-a7d4-0e2b1c4e3b89")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -9.525 9.525)
 			(end -9.525 -9.525)
@@ -20924,7 +19749,7 @@
 			(at -5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "2a36fe94-af34-412e-8c8a-dcc50c7cb37e")
 		)
 		(pad "" np_thru_hole circle
@@ -20938,7 +19763,7 @@
 			(at 5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "8398b7c6-8aa2-4f06-a71e-7436d33a7c38")
 		)
 		(pad "1" thru_hole oval
@@ -20989,6 +19814,7 @@
 			(pintype "passive")
 			(uuid "4f8e0c5c-969f-44fd-83bf-5f6395221007")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "kbd:D3_TH_SMD_v3"
 		(layer "F.Cu")
@@ -21020,19 +19846,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:D3_TH_SMD_v3"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "eb71927b-0fc5-4a60-848c-372dedf4248a")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -21082,9 +19896,9 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/4456bcfd-f427-4a15-b88f-598235c6a23a")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -0.5 -0.5)
 			(end -0.5 0.5)
@@ -21139,7 +19953,7 @@
 		(pad "1" smd rect
 			(at -1.775 0 180)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 55 "ROW2")
 			(pinfunction "K")
 			(pintype "passive")
@@ -21148,7 +19962,7 @@
 		(pad "2" smd rect
 			(at 1.775 0 180)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 18 "Net-(D28-A)")
 			(pinfunction "A")
 			(pintype "passive")
@@ -21165,6 +19979,7 @@
 			(pintype "passive")
 			(uuid "4b78c962-31f2-4f66-ba1b-018fb44ba563")
 		)
+		(embedded_fonts no)
 		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -21225,19 +20040,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "b46c371f-20c4-40cd-b23a-1bdcb5332537")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -21262,9 +20065,9 @@
 			)
 		)
 		(path "/f5f3328b-124d-4003-95f2-0356af382672")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -9.525 9.525)
 			(end -9.525 -9.525)
@@ -21389,7 +20192,7 @@
 			(at -5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "597a1779-ab8e-48de-afff-f04d2d70f34d")
 		)
 		(pad "" np_thru_hole circle
@@ -21403,7 +20206,7 @@
 			(at 5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "c22bc631-74da-485e-b139-506332fafc85")
 		)
 		(pad "1" thru_hole oval
@@ -21454,6 +20257,7 @@
 			(pintype "passive")
 			(uuid "70a308af-18f0-46d3-88ab-f5fd2f7afe67")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
 		(layer "F.Cu")
@@ -21481,19 +20285,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "25b8846e-4b2d-4834-a0f6-aa41c7cc7fb8")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -21518,9 +20310,9 @@
 			)
 		)
 		(path "/8ff986c4-36cd-4b77-9ac5-cf0cd4dc5a20")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 9.525 -9.525)
 			(end -9.525 -9.525)
@@ -21645,7 +20437,7 @@
 			(at -5.08 0 138.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "af0681d2-ed90-4615-aee6-2ce813c6f22f")
 		)
 		(pad "" np_thru_hole circle
@@ -21659,7 +20451,7 @@
 			(at 5.08 0 138.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "37e1bbad-d2c1-4e10-9994-720044336a65")
 		)
 		(pad "1" thru_hole oval
@@ -21710,6 +20502,7 @@
 			(pintype "passive")
 			(uuid "12b932ac-9067-4186-bcfd-a14efdf8d67f")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "kbd:D3_TH_SMD_v3"
 		(layer "F.Cu")
@@ -21741,19 +20534,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:D3_TH_SMD_v3"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ad292d0c-c129-49f0-8afa-5b2b5bbf8faa")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -21803,9 +20584,9 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/395bddb5-0f53-4ffc-bb3b-ebd9a454ebc4")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 0.5 0.5)
 			(end -0.4 0)
@@ -21860,7 +20641,7 @@
 		(pad "1" smd rect
 			(at -1.775 0)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 54 "ROW1")
 			(pinfunction "K")
 			(pintype "passive")
@@ -21869,7 +20650,7 @@
 		(pad "2" smd rect
 			(at 1.775 0)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "Net-(D11-A)")
 			(pinfunction "A")
 			(pintype "passive")
@@ -21886,6 +20667,7 @@
 			(pintype "passive")
 			(uuid "58b5eecb-be1c-4e41-9a73-bec34c1090c8")
 		)
+		(embedded_fonts no)
 		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -21946,19 +20728,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "6941553b-36d0-40d7-a142-f18d17a7acbc")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -21983,9 +20753,9 @@
 			)
 		)
 		(path "/fa8988c1-4173-4ae5-b62a-6eee45ffc626")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -9.525 9.525)
 			(end -9.525 -9.525)
@@ -22110,7 +20880,7 @@
 			(at -5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "8ccb1f20-2793-49b8-9bec-f71a4c5ff34d")
 		)
 		(pad "" np_thru_hole circle
@@ -22124,7 +20894,7 @@
 			(at 5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "c35f849d-a159-46c3-8197-32cfc13325b2")
 		)
 		(pad "1" thru_hole oval
@@ -22175,6 +20945,7 @@
 			(pintype "passive")
 			(uuid "19875a18-49be-4bcf-8082-83b3100efd99")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
 		(layer "F.Cu")
@@ -22202,19 +20973,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f21971b5-0c9f-4d2f-ba54-53e55313eb46")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -22239,9 +20998,9 @@
 			)
 		)
 		(path "/355daa49-e859-4b0f-a749-60d31bb1f7f0")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -9.525 9.525)
 			(end -9.525 -9.525)
@@ -22366,7 +21125,7 @@
 			(at -5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "539c33ce-c17a-4a49-a3b9-7e953cbba0f3")
 		)
 		(pad "" np_thru_hole circle
@@ -22380,7 +21139,7 @@
 			(at 5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "c8c49416-96ca-41d1-ac75-de64752e9ad7")
 		)
 		(pad "1" thru_hole oval
@@ -22431,6 +21190,7 @@
 			(pintype "passive")
 			(uuid "e27bc642-6077-47d0-9849-bd58e5504745")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
 		(layer "F.Cu")
@@ -22458,19 +21218,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "bb68b074-3db8-4eac-a9cc-42d660f7117c")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -22495,9 +21243,9 @@
 			)
 		)
 		(path "/b7726a89-ba9b-4600-b30e-b949fb148179")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 9.525 9.525)
 			(end 9.525 -9.525)
@@ -22622,7 +21370,7 @@
 			(at -5.08 0 228.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "bbd46bca-57a4-424b-a748-73278ef7a66c")
 		)
 		(pad "" np_thru_hole circle
@@ -22636,7 +21384,7 @@
 			(at 5.08 0 228.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "f9591c31-4ae3-45db-a778-32fe50e5ed81")
 		)
 		(pad "1" thru_hole oval
@@ -22687,6 +21435,7 @@
 			(pintype "passive")
 			(uuid "f4817354-91bd-440b-a086-574f2477c612")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 		(layer "F.Cu")
@@ -22717,19 +21466,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "12e3810a-59ba-4796-8596-4d405892157f")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -22755,9 +21492,9 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/94a4dcef-c0bf-485c-96a6-1410a539979e")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 0.23 -1.07)
 			(end 0.23 -1.055)
@@ -22929,6 +21666,7 @@
 			(pintype "passive")
 			(uuid "34e5dbaa-20c5-47c4-bdbe-83ec689a3d3b")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Disc_D4.3mm_W1.9mm_P5.00mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -22971,19 +21709,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:D3_TH_SMD_v3"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "9715a190-e6fe-4341-8d2a-92a59e32a7b7")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -23033,9 +21759,9 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/122f4ecb-79a6-40c8-8df3-fb4549aca730")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -0.5 -0.5)
 			(end -0.5 0.5)
@@ -23090,7 +21816,7 @@
 		(pad "1" smd rect
 			(at -1.775 0 180)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 56 "ROW3")
 			(pinfunction "K")
 			(pintype "passive")
@@ -23099,7 +21825,7 @@
 		(pad "2" smd rect
 			(at 1.775 0 180)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 33 "Net-(D37-A)")
 			(pinfunction "A")
 			(pintype "passive")
@@ -23116,6 +21842,7 @@
 			(pintype "passive")
 			(uuid "fa61b442-4424-4142-857d-c3df54e27d81")
 		)
+		(embedded_fonts no)
 		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -23180,19 +21907,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:D3_TH_SMD_v3"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "376353a7-7fbc-4e99-913b-65b99a4659ed")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -23242,9 +21957,9 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/0b2af9ec-b460-4680-be2e-3bae621b696f")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 0.5 0.5)
 			(end -0.4 0)
@@ -23299,7 +22014,7 @@
 		(pad "1" smd rect
 			(at -1.775 0)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 55 "ROW2")
 			(pinfunction "K")
 			(pintype "passive")
@@ -23308,7 +22023,7 @@
 		(pad "2" smd rect
 			(at 1.775 0)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 11 "Net-(D21-A)")
 			(pinfunction "A")
 			(pintype "passive")
@@ -23325,6 +22040,7 @@
 			(pintype "passive")
 			(uuid "45ba8cdc-538e-42b8-86a5-ff776c00c331")
 		)
+		(embedded_fonts no)
 		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -23388,19 +22104,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "8c1d6662-85cc-4b9c-900f-41cd707d29c1")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -23438,9 +22142,9 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/fac944e2-2d00-475e-92d9-8c8d511ee665")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 0.23 -1.07)
 			(end 0.23 -1.055)
@@ -23612,6 +22316,7 @@
 			(pintype "passive")
 			(uuid "e2ac1d3a-bed8-4197-8d3f-31c67f559221")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Disc_D4.3mm_W1.9mm_P5.00mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -23650,19 +22355,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "73e0305e-3fe7-4eaa-9c53-b77caafcfcbf")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -23687,9 +22380,9 @@
 			)
 		)
 		(path "/e33190c8-71b4-4ce6-a005-b126490a79eb")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -9.525 9.525)
 			(end -9.525 -9.525)
@@ -23814,7 +22507,7 @@
 			(at -5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "0092c4f3-2808-428d-afb3-5497091b1d66")
 		)
 		(pad "" np_thru_hole circle
@@ -23828,7 +22521,7 @@
 			(at 5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "ed7a8b8d-11f1-4bc9-9e24-3e028505ff02")
 		)
 		(pad "1" thru_hole oval
@@ -23879,6 +22572,7 @@
 			(pintype "passive")
 			(uuid "e38b3142-6425-477c-afd6-a4a0527d5484")
 		)
+		(embedded_fonts no)
 	)
 	(footprint ""
 		(locked yes)
@@ -23900,18 +22594,6 @@
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(uuid "3d2f7a47-46d4-407c-93cf-3f7b3da7e29d")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "42b21d33-ff7b-41b6-80ee-e164dbfb35cf")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23951,6 +22633,7 @@
 			(remove_unused_layers no)
 			(uuid "627adc3b-3c0a-4de6-9d2d-8748bc662e6c")
 		)
+		(embedded_fonts no)
 	)
 	(footprint ""
 		(locked yes)
@@ -23972,18 +22655,6 @@
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(uuid "8b36bcfe-8c78-4da1-b574-4514a3b84c76")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "71283e44-e797-4f64-ac3c-df5da265d344")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24023,6 +22694,7 @@
 			(remove_unused_layers no)
 			(uuid "d0dc265d-c004-4f07-92cc-e507397efd0e")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
 		(layer "F.Cu")
@@ -24050,19 +22722,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "b5f34d2a-15ae-44bc-9798-0c18fa871e43")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -24087,9 +22747,9 @@
 			)
 		)
 		(path "/e3f3647c-da1a-41dc-8637-7fb52d0acc9d")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -9.525 9.525)
 			(end -9.525 -9.525)
@@ -24214,7 +22874,7 @@
 			(at -5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "e40fe769-714d-410c-a8a4-fdfe697473ca")
 		)
 		(pad "" np_thru_hole circle
@@ -24228,7 +22888,7 @@
 			(at 5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "39d3b5b9-c6e7-46c4-a1f4-276c425778f7")
 		)
 		(pad "1" thru_hole oval
@@ -24279,6 +22939,7 @@
 			(pintype "passive")
 			(uuid "5a8adb2b-86d7-4416-8bfc-165f2a9a6429")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
 		(layer "F.Cu")
@@ -24306,19 +22967,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "8baaecb1-bb7c-4490-a53b-f96c81b6ad10")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -24343,9 +22992,9 @@
 			)
 		)
 		(path "/f78ff29f-57f9-4a00-86b2-ef2070fd99c2")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -9.525 9.525)
 			(end -9.525 -9.525)
@@ -24470,7 +23119,7 @@
 			(at -5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "0ebccdc5-4054-4be2-847a-eb7de9f4c568")
 		)
 		(pad "" np_thru_hole circle
@@ -24484,7 +23133,7 @@
 			(at 5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "9b26219e-c008-4169-93c1-597c5e1827fa")
 		)
 		(pad "1" thru_hole oval
@@ -24535,6 +23184,7 @@
 			(pintype "passive")
 			(uuid "ac716e45-7e9b-40f0-9619-faefe7226be2")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
 		(layer "F.Cu")
@@ -24562,19 +23212,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "4b379b5e-3d4d-45ef-8a11-20d597f35fc7")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -24599,9 +23237,9 @@
 			)
 		)
 		(path "/22d11dbf-9c25-41bd-99df-bfc2a58456b2")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -9.525 9.525)
 			(end -9.525 -9.525)
@@ -24726,7 +23364,7 @@
 			(at -5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "4b79d78b-560a-4814-be4a-990795f4c099")
 		)
 		(pad "" np_thru_hole circle
@@ -24740,7 +23378,7 @@
 			(at 5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "a40e6859-f71e-4070-a33d-5173cacc5f5f")
 		)
 		(pad "1" thru_hole oval
@@ -24791,6 +23429,7 @@
 			(pintype "passive")
 			(uuid "92a4ee04-d54e-4e10-a8c1-d5767861cf8a")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Package_QFP:LQFP-64_10x10mm_P0.5mm"
 		(layer "F.Cu")
@@ -24821,18 +23460,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_QFP:LQFP-64_10x10mm_P0.5mm"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "370dc3d4-3057-44a6-a0ee-d1af77954664")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32f072rb.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
@@ -24859,7 +23486,7 @@
 		)
 		(property ki_fp_filters "LQFP*10x10mm*P0.5mm*")
 		(path "/050b6492-7e98-4a5f-b9ef-893b4d3341e0")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -25256,7 +23883,7 @@
 		(pad "1" smd roundrect
 			(at -5.675 -3.75 90)
 			(size 1.55 0.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 41 "+3V3")
 			(pinfunction "VBAT")
@@ -25266,7 +23893,7 @@
 		(pad "2" smd roundrect
 			(at -5.675 -3.25 90)
 			(size 1.55 0.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 30 "ROW0")
 			(pinfunction "PC13")
@@ -25276,7 +23903,7 @@
 		(pad "3" smd roundrect
 			(at -5.675 -2.75 90)
 			(size 1.55 0.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 54 "ROW1")
 			(pinfunction "PC14")
@@ -25286,7 +23913,7 @@
 		(pad "4" smd roundrect
 			(at -5.675 -2.25 90)
 			(size 1.55 0.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 57 "unconnected-(U1-PC15-Pad4)")
 			(pinfunction "PC15")
@@ -25296,7 +23923,7 @@
 		(pad "5" smd roundrect
 			(at -5.675 -1.75 90)
 			(size 1.55 0.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 58 "unconnected-(U1-PF0-Pad5)")
 			(pinfunction "PF0")
@@ -25306,7 +23933,7 @@
 		(pad "6" smd roundrect
 			(at -5.675 -1.25 90)
 			(size 1.55 0.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 59 "unconnected-(U1-PF1-Pad6)")
 			(pinfunction "PF1")
@@ -25316,7 +23943,7 @@
 		(pad "7" smd roundrect
 			(at -5.675 -0.75 90)
 			(size 1.55 0.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 43 "NRST")
 			(pinfunction "NRST")
@@ -25326,7 +23953,7 @@
 		(pad "8" smd roundrect
 			(at -5.675 -0.25 90)
 			(size 1.55 0.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 60 "unconnected-(U1-PC0-Pad8)")
 			(pinfunction "PC0")
@@ -25336,7 +23963,7 @@
 		(pad "9" smd roundrect
 			(at -5.675 0.25 90)
 			(size 1.55 0.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 61 "unconnected-(U1-PC1-Pad9)")
 			(pinfunction "PC1")
@@ -25346,7 +23973,7 @@
 		(pad "10" smd roundrect
 			(at -5.675 0.75 90)
 			(size 1.55 0.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 62 "unconnected-(U1-PC2-Pad10)")
 			(pinfunction "PC2")
@@ -25356,7 +23983,7 @@
 		(pad "11" smd roundrect
 			(at -5.675 1.25 90)
 			(size 1.55 0.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 63 "unconnected-(U1-PC3-Pad11)")
 			(pinfunction "PC3")
@@ -25366,7 +23993,7 @@
 		(pad "12" smd roundrect
 			(at -5.675 1.75 90)
 			(size 1.55 0.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 42 "GND")
 			(pinfunction "VSSA")
@@ -25376,7 +24003,7 @@
 		(pad "13" smd roundrect
 			(at -5.675 2.25 90)
 			(size 1.55 0.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 41 "+3V3")
 			(pinfunction "VDDA")
@@ -25386,7 +24013,7 @@
 		(pad "14" smd roundrect
 			(at -5.675 2.75 90)
 			(size 1.55 0.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 56 "ROW3")
 			(pinfunction "PA0")
@@ -25396,7 +24023,7 @@
 		(pad "15" smd roundrect
 			(at -5.675 3.25 90)
 			(size 1.55 0.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 55 "ROW2")
 			(pinfunction "PA1")
@@ -25406,7 +24033,7 @@
 		(pad "16" smd roundrect
 			(at -5.675 3.75 90)
 			(size 1.55 0.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 64 "unconnected-(U1-PA2-Pad16)")
 			(pinfunction "PA2")
@@ -25416,7 +24043,7 @@
 		(pad "17" smd roundrect
 			(at -3.75 5.675 90)
 			(size 0.3 1.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 65 "unconnected-(U1-PA3-Pad17)")
 			(pinfunction "PA3")
@@ -25426,7 +24053,7 @@
 		(pad "18" smd roundrect
 			(at -3.25 5.675 90)
 			(size 0.3 1.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 42 "GND")
 			(pinfunction "VSS")
@@ -25436,7 +24063,7 @@
 		(pad "19" smd roundrect
 			(at -2.75 5.675 90)
 			(size 0.3 1.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 41 "+3V3")
 			(pinfunction "VDD")
@@ -25446,7 +24073,7 @@
 		(pad "20" smd roundrect
 			(at -2.25 5.675 90)
 			(size 0.3 1.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 66 "unconnected-(U1-PA4-Pad20)")
 			(pinfunction "PA4")
@@ -25456,7 +24083,7 @@
 		(pad "21" smd roundrect
 			(at -1.75 5.675 90)
 			(size 0.3 1.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 67 "unconnected-(U1-PA5-Pad21)")
 			(pinfunction "PA5")
@@ -25466,7 +24093,7 @@
 		(pad "22" smd roundrect
 			(at -1.25 5.675 90)
 			(size 0.3 1.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 98 "COL9")
 			(pinfunction "PA6")
@@ -25476,7 +24103,7 @@
 		(pad "23" smd roundrect
 			(at -0.75 5.675 90)
 			(size 0.3 1.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 97 "COL8")
 			(pinfunction "PA7")
@@ -25486,7 +24113,7 @@
 		(pad "24" smd roundrect
 			(at -0.25 5.675 90)
 			(size 0.3 1.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 96 "COL7")
 			(pinfunction "PC4")
@@ -25496,7 +24123,7 @@
 		(pad "25" smd roundrect
 			(at 0.25 5.675 90)
 			(size 0.3 1.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 95 "COL6")
 			(pinfunction "PC5")
@@ -25506,7 +24133,7 @@
 		(pad "26" smd roundrect
 			(at 0.75 5.675 90)
 			(size 0.3 1.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 94 "COL5")
 			(pinfunction "PB0")
@@ -25516,7 +24143,7 @@
 		(pad "27" smd roundrect
 			(at 1.25 5.675 90)
 			(size 0.3 1.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 68 "unconnected-(U1-PB1-Pad27)")
 			(pinfunction "PB1")
@@ -25526,7 +24153,7 @@
 		(pad "28" smd roundrect
 			(at 1.75 5.675 90)
 			(size 0.3 1.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 69 "unconnected-(U1-PB2-Pad28)")
 			(pinfunction "PB2")
@@ -25536,7 +24163,7 @@
 		(pad "29" smd roundrect
 			(at 2.25 5.675 90)
 			(size 0.3 1.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 70 "unconnected-(U1-PB10-Pad29)")
 			(pinfunction "PB10")
@@ -25546,7 +24173,7 @@
 		(pad "30" smd roundrect
 			(at 2.75 5.675 90)
 			(size 0.3 1.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 71 "unconnected-(U1-PB11-Pad30)")
 			(pinfunction "PB11")
@@ -25556,7 +24183,7 @@
 		(pad "31" smd roundrect
 			(at 3.25 5.675 90)
 			(size 0.3 1.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 42 "GND")
 			(pinfunction "VSS")
@@ -25566,7 +24193,7 @@
 		(pad "32" smd roundrect
 			(at 3.75 5.675 90)
 			(size 0.3 1.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 41 "+3V3")
 			(pinfunction "VDD")
@@ -25576,7 +24203,7 @@
 		(pad "33" smd roundrect
 			(at 5.675 3.75 90)
 			(size 1.55 0.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 72 "unconnected-(U1-PB12-Pad33)")
 			(pinfunction "PB12")
@@ -25586,7 +24213,7 @@
 		(pad "34" smd roundrect
 			(at 5.675 3.25 90)
 			(size 1.55 0.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 73 "unconnected-(U1-PB13-Pad34)")
 			(pinfunction "PB13")
@@ -25596,7 +24223,7 @@
 		(pad "35" smd roundrect
 			(at 5.675 2.75 90)
 			(size 1.55 0.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 74 "unconnected-(U1-PB14-Pad35)")
 			(pinfunction "PB14")
@@ -25606,7 +24233,7 @@
 		(pad "36" smd roundrect
 			(at 5.675 2.25 90)
 			(size 1.55 0.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 75 "unconnected-(U1-PB15-Pad36)")
 			(pinfunction "PB15")
@@ -25616,7 +24243,7 @@
 		(pad "37" smd roundrect
 			(at 5.675 1.75 90)
 			(size 1.55 0.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 76 "unconnected-(U1-PC6-Pad37)")
 			(pinfunction "PC6")
@@ -25626,7 +24253,7 @@
 		(pad "38" smd roundrect
 			(at 5.675 1.25 90)
 			(size 1.55 0.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 77 "unconnected-(U1-PC7-Pad38)")
 			(pinfunction "PC7")
@@ -25636,7 +24263,7 @@
 		(pad "39" smd roundrect
 			(at 5.675 0.75 90)
 			(size 1.55 0.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 78 "unconnected-(U1-PC8-Pad39)")
 			(pinfunction "PC8")
@@ -25646,7 +24273,7 @@
 		(pad "40" smd roundrect
 			(at 5.675 0.25 90)
 			(size 1.55 0.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 79 "unconnected-(U1-PC9-Pad40)")
 			(pinfunction "PC9")
@@ -25656,7 +24283,7 @@
 		(pad "41" smd roundrect
 			(at 5.675 -0.25 90)
 			(size 1.55 0.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 104 "RGB MCU")
 			(pinfunction "PA8")
@@ -25666,7 +24293,7 @@
 		(pad "42" smd roundrect
 			(at 5.675 -0.75 90)
 			(size 1.55 0.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 80 "unconnected-(U1-PA9-Pad42)")
 			(pinfunction "PA9")
@@ -25676,7 +24303,7 @@
 		(pad "43" smd roundrect
 			(at 5.675 -1.25 90)
 			(size 1.55 0.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 81 "unconnected-(U1-PA10-Pad43)")
 			(pinfunction "PA10")
@@ -25686,7 +24313,7 @@
 		(pad "44" smd roundrect
 			(at 5.675 -1.75 90)
 			(size 1.55 0.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 51 "D_N")
 			(pinfunction "PA11")
@@ -25696,7 +24323,7 @@
 		(pad "45" smd roundrect
 			(at 5.675 -2.25 90)
 			(size 1.55 0.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 52 "D_P")
 			(pinfunction "PA12")
@@ -25706,7 +24333,7 @@
 		(pad "46" smd roundrect
 			(at 5.675 -2.75 90)
 			(size 1.55 0.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 82 "unconnected-(U1-PA13-Pad46)")
 			(pinfunction "PA13")
@@ -25716,7 +24343,7 @@
 		(pad "47" smd roundrect
 			(at 5.675 -3.25 90)
 			(size 1.55 0.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 42 "GND")
 			(pinfunction "VSS")
@@ -25726,7 +24353,7 @@
 		(pad "48" smd roundrect
 			(at 5.675 -3.75 90)
 			(size 1.55 0.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 41 "+3V3")
 			(pinfunction "VDDIO2")
@@ -25736,7 +24363,7 @@
 		(pad "49" smd roundrect
 			(at 3.75 -5.675 90)
 			(size 0.3 1.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 83 "unconnected-(U1-PA14-Pad49)")
 			(pinfunction "PA14")
@@ -25746,7 +24373,7 @@
 		(pad "50" smd roundrect
 			(at 3.25 -5.675 90)
 			(size 0.3 1.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 84 "unconnected-(U1-PA15-Pad50)")
 			(pinfunction "PA15")
@@ -25756,7 +24383,7 @@
 		(pad "51" smd roundrect
 			(at 2.75 -5.675 90)
 			(size 0.3 1.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 85 "unconnected-(U1-PC10-Pad51)")
 			(pinfunction "PC10")
@@ -25766,7 +24393,7 @@
 		(pad "52" smd roundrect
 			(at 2.25 -5.675 90)
 			(size 0.3 1.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 86 "unconnected-(U1-PC11-Pad52)")
 			(pinfunction "PC11")
@@ -25776,7 +24403,7 @@
 		(pad "53" smd roundrect
 			(at 1.75 -5.675 90)
 			(size 0.3 1.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 87 "unconnected-(U1-PC12-Pad53)")
 			(pinfunction "PC12")
@@ -25786,7 +24413,7 @@
 		(pad "54" smd roundrect
 			(at 1.25 -5.675 90)
 			(size 0.3 1.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 88 "unconnected-(U1-PD2-Pad54)")
 			(pinfunction "PD2")
@@ -25796,7 +24423,7 @@
 		(pad "55" smd roundrect
 			(at 0.75 -5.675 90)
 			(size 0.3 1.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 93 "COL4")
 			(pinfunction "PB3")
@@ -25806,7 +24433,7 @@
 		(pad "56" smd roundrect
 			(at 0.25 -5.675 90)
 			(size 0.3 1.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 92 "COL3")
 			(pinfunction "PB4")
@@ -25816,7 +24443,7 @@
 		(pad "57" smd roundrect
 			(at -0.25 -5.675 90)
 			(size 0.3 1.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 91 "COL2")
 			(pinfunction "PB5")
@@ -25826,7 +24453,7 @@
 		(pad "58" smd roundrect
 			(at -0.75 -5.675 90)
 			(size 0.3 1.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 90 "COL1")
 			(pinfunction "PB6")
@@ -25836,7 +24463,7 @@
 		(pad "59" smd roundrect
 			(at -1.25 -5.675 90)
 			(size 0.3 1.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 89 "COL0")
 			(pinfunction "PB7")
@@ -25846,7 +24473,7 @@
 		(pad "60" smd roundrect
 			(at -1.75 -5.675 90)
 			(size 0.3 1.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 50 "BOOT0")
 			(pinfunction "BOOT0")
@@ -25856,7 +24483,7 @@
 		(pad "61" smd roundrect
 			(at -2.25 -5.675 90)
 			(size 0.3 1.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 99 "unconnected-(U1-PB8-Pad61)")
 			(pinfunction "PB8")
@@ -25866,7 +24493,7 @@
 		(pad "62" smd roundrect
 			(at -2.75 -5.675 90)
 			(size 0.3 1.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 100 "unconnected-(U1-PB9-Pad62)")
 			(pinfunction "PB9")
@@ -25876,7 +24503,7 @@
 		(pad "63" smd roundrect
 			(at -3.25 -5.675 90)
 			(size 0.3 1.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 42 "GND")
 			(pinfunction "VSS")
@@ -25886,13 +24513,14 @@
 		(pad "64" smd roundrect
 			(at -3.75 -5.675 90)
 			(size 0.3 1.55)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 41 "+3V3")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "e80c4631-a661-47df-9c55-4d6af481538c")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Package_QFP.3dshapes/LQFP-64_10x10mm_P0.5mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -25931,19 +24559,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "201b9c90-2ece-4e34-ae8b-81c788ff2e51")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -25968,9 +24584,9 @@
 			)
 		)
 		(path "/1f8af928-b4c2-4fba-9fbb-305d0a2b0bef")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -9.525 9.525)
 			(end -9.525 -9.525)
@@ -26095,7 +24711,7 @@
 			(at -5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "f7a90a92-754b-4bff-84ad-006e38247fd2")
 		)
 		(pad "" np_thru_hole circle
@@ -26109,7 +24725,7 @@
 			(at 5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "abfcb53f-ec2c-4af7-b751-c62b22230701")
 		)
 		(pad "1" thru_hole oval
@@ -26160,6 +24776,7 @@
 			(pintype "passive")
 			(uuid "cf2e3253-3146-4e61-aa9a-e94151ea00d0")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "kbd:D3_TH_SMD_v3"
 		(layer "F.Cu")
@@ -26191,19 +24808,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:D3_TH_SMD_v3"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "628619b3-78a2-4e38-b64e-d87bad6f826e")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -26253,9 +24858,9 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/774d38e6-0970-4f63-a273-d3d953f79dd0")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 0.5 0.5)
 			(end -0.4 0)
@@ -26310,7 +24915,7 @@
 		(pad "1" smd rect
 			(at -1.775 0)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 55 "ROW2")
 			(pinfunction "K")
 			(pintype "passive")
@@ -26319,7 +24924,7 @@
 		(pad "2" smd rect
 			(at 1.775 0)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 15 "Net-(D25-A)")
 			(pinfunction "A")
 			(pintype "passive")
@@ -26336,6 +24941,7 @@
 			(pintype "passive")
 			(uuid "bc37aa91-5e25-44ab-9a2c-18ab7251bc93")
 		)
+		(embedded_fonts no)
 		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -26400,19 +25006,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:D3_TH_SMD_v3"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "fd450f26-8c26-46f9-bc95-c80b8cc154e4")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -26462,9 +25056,9 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/0277010b-cf6e-48b4-a569-56167f10be94")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 0.5 0.5)
 			(end -0.4 0)
@@ -26519,7 +25113,7 @@
 		(pad "1" smd rect
 			(at -1.775 0)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 55 "ROW2")
 			(pinfunction "K")
 			(pintype "passive")
@@ -26528,7 +25122,7 @@
 		(pad "2" smd rect
 			(at 1.775 0)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 12 "Net-(D22-A)")
 			(pinfunction "A")
 			(pintype "passive")
@@ -26545,6 +25139,7 @@
 			(pintype "passive")
 			(uuid "660eb023-ea79-43da-bc16-63e141722f5f")
 		)
+		(embedded_fonts no)
 		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -26608,20 +25203,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
-			(at 0 0 -90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "332a3d6f-b53e-4523-9f67-2bbf5681c00f")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 -90)
+		(property "Datasheet" "~"
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0ba1c80b-0aaa-43b4-bcc4-607a9e3afe56")
@@ -26633,7 +25216,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "741952f6-e484-4fc6-aef9-fee32f4677be")
@@ -26658,9 +25241,9 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/ea1cfdb8-d972-4b5c-b1fa-fc30bcca027e")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 0.23 1.07)
 			(end 4.77 1.07)
@@ -26832,6 +25415,7 @@
 			(pintype "passive")
 			(uuid "be9998f7-5873-423c-9192-75697b155a32")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Disc_D4.3mm_W1.9mm_P5.00mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -26870,19 +25454,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "7a6e4f98-9778-47b0-913e-7b1f7d64581e")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -26907,9 +25479,9 @@
 			)
 		)
 		(path "/93d2b809-7717-4f1f-8e1d-241c752a0230")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -9.525 9.525)
 			(end -9.525 -9.525)
@@ -27034,7 +25606,7 @@
 			(at -5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "d2e8eafc-9ec2-4242-bd22-f3fcace64de9")
 		)
 		(pad "" np_thru_hole circle
@@ -27048,7 +25620,7 @@
 			(at 5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "5b9c1505-60e2-42c9-b03a-5e7ba4fe6621")
 		)
 		(pad "1" thru_hole oval
@@ -27099,6 +25671,7 @@
 			(pintype "passive")
 			(uuid "11fb1bca-0688-4634-89ac-04c215598e19")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "kbd:D3_TH_SMD_v3"
 		(layer "F.Cu")
@@ -27130,19 +25703,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:D3_TH_SMD_v3"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d0ce7c56-ebb7-47b3-a5b5-aea7f5c4143d")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -27192,9 +25753,9 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/662bd6f9-44fc-4cdf-ad9f-6f5ee966ce02")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 0.5 0.5)
 			(end -0.4 0)
@@ -27249,7 +25810,7 @@
 		(pad "1" smd rect
 			(at -1.775 0)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 56 "ROW3")
 			(pinfunction "K")
 			(pintype "passive")
@@ -27258,7 +25819,7 @@
 		(pad "2" smd rect
 			(at 1.775 0)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 23 "Net-(D32-A)")
 			(pinfunction "A")
 			(pintype "passive")
@@ -27275,6 +25836,7 @@
 			(pintype "passive")
 			(uuid "d17687fe-42e5-4ae6-8b88-79c4b66bf5f4")
 		)
+		(embedded_fonts no)
 		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -27335,19 +25897,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d4aedc9d-00df-4fa3-a7a9-19c92b0ebaa4")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -27372,9 +25922,9 @@
 			)
 		)
 		(path "/23e0f002-dc67-48f4-bcc9-b2e1030288d0")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -9.525 9.525)
 			(end -9.525 -9.525)
@@ -27499,7 +26049,7 @@
 			(at -5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "64f3564f-e556-4119-8074-7e569f01bfb5")
 		)
 		(pad "" np_thru_hole circle
@@ -27513,7 +26063,7 @@
 			(at 5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "b99ca6a9-9716-4d9f-aed0-5e9a8d758820")
 		)
 		(pad "1" thru_hole oval
@@ -27564,6 +26114,7 @@
 			(pintype "passive")
 			(uuid "6274d6df-084b-4fe1-9db6-ec31e1a7721b")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
 		(layer "F.Cu")
@@ -27591,19 +26142,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "21703cdf-4ba6-481f-8e84-eb107b19c172")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -27628,9 +26167,9 @@
 			)
 		)
 		(path "/17d50684-99c6-4b57-83b2-5adf308c1aa8")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -9.525 9.525)
 			(end -9.525 -9.525)
@@ -27755,7 +26294,7 @@
 			(at -5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "29bd5a36-eddd-4f9a-9c14-7206c38dbda8")
 		)
 		(pad "" np_thru_hole circle
@@ -27769,7 +26308,7 @@
 			(at 5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "1f9093ec-1676-4415-a695-9ffb8db70a51")
 		)
 		(pad "1" thru_hole oval
@@ -27820,6 +26359,7 @@
 			(pintype "passive")
 			(uuid "7b187010-1ad6-4e29-a347-37e2b80c53f7")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
 		(layer "F.Cu")
@@ -27847,19 +26387,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ffa3c165-0fa5-4faa-9ac1-1ee13a5bd256")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -27884,9 +26412,9 @@
 			)
 		)
 		(path "/5514f59e-32a9-471d-b448-64ed418bcc5b")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -9.525 9.525)
 			(end -9.525 -9.525)
@@ -28011,7 +26539,7 @@
 			(at -5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "d500f4d0-e29d-42df-8415-120fb7878362")
 		)
 		(pad "" np_thru_hole circle
@@ -28025,7 +26553,7 @@
 			(at 5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "f49c834c-4657-417a-a7a6-172186e32c22")
 		)
 		(pad "1" thru_hole oval
@@ -28076,6 +26604,7 @@
 			(pintype "passive")
 			(uuid "ddfeec8e-dfab-4bbd-a3e4-751d95901af3")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
 		(layer "F.Cu")
@@ -28103,19 +26632,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MX_Alps_Hybrid:MX-Alps-Hybrid-1U"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "1a817345-b1cc-4c44-aee5-f15e05d63a85")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -28140,9 +26657,9 @@
 			)
 		)
 		(path "/33e01b68-01c3-4fef-b0e0-8a52ca5ae0e6")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -9.525 9.525)
 			(end -9.525 -9.525)
@@ -28267,7 +26784,7 @@
 			(at -5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "635c2c40-6a3b-40ed-9f7a-cb7a1951819f")
 		)
 		(pad "" np_thru_hole circle
@@ -28281,7 +26798,7 @@
 			(at 5.08 0 48.099)
 			(size 1.7018 1.7018)
 			(drill 1.7018)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "d1fdce36-1823-4439-ace7-ea71f7d0f2f0")
 		)
 		(pad "1" thru_hole oval
@@ -28332,6 +26849,7 @@
 			(pintype "passive")
 			(uuid "c2c7ca9d-7490-44af-9d47-63a135bd6160")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 		(layer "F.Cu")
@@ -28362,20 +26880,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
-			(at 0 0 -90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a9d367a5-2ac9-4551-9a23-7e0b67d98b90")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 -90)
+		(property "Datasheet" "~"
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "864b12a2-7579-4c84-9f11-76850f535f95")
@@ -28387,7 +26893,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "4c93d941-8db8-4dbc-a7c6-ee7552245839")
@@ -28400,9 +26906,9 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/437e4609-4807-4144-a6f1-f8036abf0907")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 0.23 1.07)
 			(end 4.77 1.07)
@@ -28574,6 +27080,7 @@
 			(pintype "passive")
 			(uuid "2b20095e-e4c0-4724-97e3-2d2bb1d70967")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Disc_D4.3mm_W1.9mm_P5.00mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -28616,19 +27123,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:D3_TH_SMD_v3"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "4b0ca2e0-b5da-4fba-a06c-7806673412e6")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -28678,9 +27173,9 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/8ce73deb-a347-4fdf-ad99-da7eb896bf07")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 0.5 0.5)
 			(end -0.4 0)
@@ -28735,7 +27230,7 @@
 		(pad "1" smd rect
 			(at -1.775 0)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 54 "ROW1")
 			(pinfunction "K")
 			(pintype "passive")
@@ -28744,7 +27239,7 @@
 		(pad "2" smd rect
 			(at 1.775 0)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 4 "Net-(D14-A)")
 			(pinfunction "A")
 			(pintype "passive")
@@ -28761,6 +27256,7 @@
 			(pintype "passive")
 			(uuid "3316f109-fa4b-42c8-862d-dc9918ba12b8")
 		)
+		(embedded_fonts no)
 		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -28824,19 +27320,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H4.3mm"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d459190c-0278-4d3b-af97-ad987a921bdf")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -28860,7 +27344,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C115351"
 			(at 285.1 188.65 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -28873,9 +27357,9 @@
 			)
 		)
 		(path "/b58e5d68-a765-44cf-9f08-abf3edf40138")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 6.75 3)
 			(end 6.75 1.5)
@@ -29093,7 +27577,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "1aec4a9c-8851-4009-8b85-3c90d1ad2e8f")
 		)
@@ -29152,6 +27636,7 @@
 			(pintype "passive")
 			(uuid "f55b7ef3-8411-447b-888d-9688f354be0f")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH_6mm_H4.3mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -29194,19 +27679,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:D3_TH_SMD_v3"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "8f2781c5-a39a-4f97-bd76-8cb45563805b")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -29256,9 +27729,9 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/946b400f-2966-42c1-b40c-f37967911413")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 0.5 0.5)
 			(end -0.4 0)
@@ -29313,7 +27786,7 @@
 		(pad "1" smd rect
 			(at -1.775 0)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 56 "ROW3")
 			(pinfunction "K")
 			(pintype "passive")
@@ -29322,7 +27795,7 @@
 		(pad "2" smd rect
 			(at 1.775 0)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 29 "Net-(D35-A)")
 			(pinfunction "A")
 			(pintype "passive")
@@ -29339,6 +27812,7 @@
 			(pintype "passive")
 			(uuid "6f61e0dd-4850-4134-8d5b-0bb0e1aaac9a")
 		)
+		(embedded_fonts no)
 		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -29402,19 +27876,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "37ee9f69-9d58-43ab-a2b8-792d09574270")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -29440,9 +27902,9 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/8237984c-2140-43a0-a9da-b38b306b12f9")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 6.58 0)
 			(end 5.93 0)
@@ -29707,6 +28169,7 @@
 			(pintype "passive")
 			(uuid "f4369cbd-54f4-4e6e-80c8-c9aac666a981")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Diode_THT.3dshapes/D_DO-35_SOD27_P7.62mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -29749,19 +28212,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:D3_TH_SMD_v3"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "b2ac981a-6136-45fb-ae5c-f162b427e4df")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -29811,9 +28262,9 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/acdd6b5f-b485-4d71-a225-8aa71e3bcfee")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -0.5 -0.5)
 			(end -0.5 0.5)
@@ -29868,7 +28319,7 @@
 		(pad "1" smd rect
 			(at -1.775 0 180)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 55 "ROW2")
 			(pinfunction "K")
 			(pintype "passive")
@@ -29877,7 +28328,7 @@
 		(pad "2" smd rect
 			(at 1.775 0 180)
 			(size 1.4 1.3)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 16 "Net-(D26-A)")
 			(pinfunction "A")
 			(pintype "passive")
@@ -29894,6 +28345,7 @@
 			(pintype "passive")
 			(uuid "d8bf19df-d67f-4f59-af8a-248aa527929e")
 		)
+		(embedded_fonts no)
 		(model "Diodes_SMD.3dshapes/SMB_Handsoldering.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -29958,18 +28410,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "kbd:NeoPixel_bulb_5mm_Adafruit_1938"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "703bcc38-7741-45b9-b651-d4013eeb09f6")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
 			(at 0 0 180)
 			(layer "F.Fab")
@@ -29996,9 +28436,9 @@
 		)
 		(property ki_fp_filters "LED*WS2812*PLCC*5.0x5.0mm*P3.2mm*")
 		(path "/3b016604-9071-4039-abda-2c546b50bac2")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_circle
 			(center 0 0)
 			(end 0 2.49)
@@ -30006,7 +28446,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "5332e0e6-0821-414b-897d-57b02c7b30ef")
 		)
@@ -30017,7 +28457,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "Dwgs.User")
 			(uuid "24cfebe0-1cce-4aba-af08-d2da17d884c9")
 		)
@@ -30138,6 +28578,7 @@
 			(pintype "input")
 			(uuid "2111aa7c-9196-4f95-913e-6dd5435ffb48")
 		)
+		(embedded_fonts no)
 		(model ":KICAD7_3DMODEL_DIR:LED_THT.3dshapes/LED_D5.0mm-4_RGB.step"
 			(offset
 				(xyz 1.9 0 1.5)
@@ -30180,18 +28621,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" ""
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "aebd8502-f54b-4851-80ae-2defd9e70529")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 180)
 			(layer "F.Fab")
@@ -30227,7 +28656,7 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "B.SilkS")
 			(uuid "ffe0c10b-44d5-47e8-b69e-cb1e983167f2")
 		)
@@ -30242,7 +28671,7 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "B.SilkS")
 			(uuid "ebb66be2-3a96-4221-8bd6-758e5c6d3fc7")
 		)
@@ -30266,7 +28695,7 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "B.SilkS")
 			(uuid "40308bfc-0fa6-41cf-b593-7ddffd70c3cb")
 		)
@@ -30298,7 +28727,7 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "B.SilkS")
 			(uuid "6556392d-93e0-4828-898a-7e86e72e4794")
 		)
@@ -30331,7 +28760,7 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "B.SilkS")
 			(uuid "8b59b239-4946-4c86-ad10-87baa37805f4")
 		)
@@ -30366,7 +28795,7 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "B.SilkS")
 			(uuid "16248004-caf8-4c5b-a6fa-1ca1dada750c")
 		)
@@ -30399,7 +28828,7 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "B.SilkS")
 			(uuid "58c1ac82-e31b-49ff-8b11-f51d4617ab32")
 		)
@@ -30443,7 +28872,7 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "B.SilkS")
 			(uuid "5ab10f5a-f13b-4baf-aa6d-d3d5932f5653")
 		)
@@ -30491,10 +28920,11 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "B.SilkS")
 			(uuid "05aacdeb-01c8-4991-b3d1-37a9c5266270")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "kbd:NeoPixel_bulb_5mm_Adafruit_1938"
 		(layer "B.Cu")
@@ -30526,18 +28956,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "kbd:NeoPixel_bulb_5mm_Adafruit_1938"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "6dd5768b-f1d5-4b66-8860-c15957c916a9")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
 			(at 0 0 180)
 			(layer "F.Fab")
@@ -30564,9 +28982,9 @@
 		)
 		(property ki_fp_filters "LED*WS2812*PLCC*5.0x5.0mm*P3.2mm*")
 		(path "/4aad6a99-b71c-44a4-ad2f-7ff6fa16ce7b")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(attr through_hole exclude_from_pos_files)
 		(fp_circle
 			(center 0 0)
 			(end 0 2.49)
@@ -30574,7 +28992,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "c30ea8d9-99f9-4b0c-b094-91047bde848c")
 		)
@@ -30585,7 +29003,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "Dwgs.User")
 			(uuid "f562947d-a824-47ce-8c48-d167c69d6902")
 		)
@@ -30706,6 +29124,7 @@
 			(pintype "input")
 			(uuid "1baab076-fccc-4253-a11c-38a20051b6d5")
 		)
+		(embedded_fonts no)
 		(model ":KICAD7_3DMODEL_DIR:LED_THT.3dshapes/LED_D5.0mm-4_RGB.step"
 			(offset
 				(xyz 1.9 0 1.5)
@@ -30744,19 +29163,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Footprint" "PCM_marbastlib-various:USB_C_Receptacle_HRO_TYPE-C-31-M-12"
-			(at 0 0 180)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "a0cfab6c-db7e-4880-93b4-6cbc7d7d7804")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -30804,7 +29210,7 @@
 		)
 		(property ki_fp_filters "USB*C*Receptacle*")
 		(path "/33f0d066-6791-48c3-8d52-6256f727ff9a")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "LeSTMovoz revision 2.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -30936,7 +29342,7 @@
 		(pad "A1" smd rect
 			(at -3.25 4.045)
 			(size 0.6 1.45)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 42 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
@@ -30945,7 +29351,7 @@
 		(pad "A4" smd rect
 			(at -2.45 4.045)
 			(size 0.6 1.45)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 45 "VBUS")
 			(pinfunction "VBUS")
 			(pintype "passive")
@@ -30954,7 +29360,7 @@
 		(pad "A5" smd rect
 			(at -1.25 4.045)
 			(size 0.3 1.45)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 46 "/CC1")
 			(pinfunction "CC1")
 			(pintype "bidirectional")
@@ -30963,7 +29369,7 @@
 		(pad "A6" smd rect
 			(at -0.25 4.045)
 			(size 0.3 1.45)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 52 "D_P")
 			(pinfunction "D+")
 			(pintype "bidirectional")
@@ -30972,7 +29378,7 @@
 		(pad "A7" smd rect
 			(at 0.25 4.045)
 			(size 0.3 1.45)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 51 "D_N")
 			(pinfunction "D-")
 			(pintype "bidirectional")
@@ -30981,7 +29387,7 @@
 		(pad "A8" smd rect
 			(at 1.25 4.045)
 			(size 0.3 1.45)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 47 "unconnected-(J1-SBU1-PadA8)")
 			(pinfunction "SBU1")
 			(pintype "bidirectional+no_connect")
@@ -30990,7 +29396,7 @@
 		(pad "A9" smd rect
 			(at 2.45 4.045)
 			(size 0.6 1.45)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 45 "VBUS")
 			(pinfunction "VBUS")
 			(pintype "passive")
@@ -30999,7 +29405,7 @@
 		(pad "A12" smd rect
 			(at 3.25 4.045)
 			(size 0.6 1.45)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 42 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
@@ -31008,7 +29414,7 @@
 		(pad "B1" smd rect
 			(at 3.25 4.045)
 			(size 0.6 1.45)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 42 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
@@ -31017,7 +29423,7 @@
 		(pad "B4" smd rect
 			(at 2.45 4.045)
 			(size 0.6 1.45)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 45 "VBUS")
 			(pinfunction "VBUS")
 			(pintype "passive")
@@ -31026,7 +29432,7 @@
 		(pad "B5" smd rect
 			(at 1.75 4.045)
 			(size 0.3 1.45)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 48 "/CC2")
 			(pinfunction "CC2")
 			(pintype "bidirectional")
@@ -31035,7 +29441,7 @@
 		(pad "B6" smd rect
 			(at 0.75 4.045)
 			(size 0.3 1.45)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 52 "D_P")
 			(pinfunction "D+")
 			(pintype "bidirectional")
@@ -31044,7 +29450,7 @@
 		(pad "B7" smd rect
 			(at -0.75 4.045)
 			(size 0.3 1.45)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 51 "D_N")
 			(pinfunction "D-")
 			(pintype "bidirectional")
@@ -31053,7 +29459,7 @@
 		(pad "B8" smd rect
 			(at -1.75 4.045)
 			(size 0.3 1.45)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 49 "unconnected-(J1-SBU2-PadB8)")
 			(pinfunction "SBU2")
 			(pintype "bidirectional+no_connect")
@@ -31062,7 +29468,7 @@
 		(pad "B9" smd rect
 			(at -2.45 4.045)
 			(size 0.6 1.45)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 45 "VBUS")
 			(pinfunction "VBUS")
 			(pintype "passive")
@@ -31071,7 +29477,7 @@
 		(pad "B12" smd rect
 			(at -3.25 4.045)
 			(size 0.6 1.45)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 42 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
@@ -31121,6 +29527,7 @@
 			(pintype "passive")
 			(uuid "d1922264-36f7-40d3-97e1-88ffea6b8deb")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/CON_TYPE-C-31-M-12.step"
 			(offset
 				(xyz -4.47 -3.65 0.04)
@@ -31163,18 +29570,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" ""
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ab2efce9-f807-4433-9cdc-a2882159dfc8")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 180)
 			(layer "F.Fab")
@@ -31209,7 +29604,7 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "B.SilkS")
 			(uuid "a9da35a4-3475-4ed5-9403-ee0fa75ef00f")
 		)
@@ -31227,7 +29622,7 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "B.SilkS")
 			(uuid "8b93340c-ed7b-4545-a51d-64f3351095e9")
 		)
@@ -31258,7 +29653,7 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "B.SilkS")
 			(uuid "0de65803-f842-490d-aa3c-f126e9136199")
 		)
@@ -31292,20 +29687,11 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "B.SilkS")
 			(uuid "b67cac66-c643-4cf8-aeff-640b0379003f")
 		)
-	)
-	(gr_line
-		(start 214.3125 64.29375)
-		(end 234.95 64.29375)
-		(stroke
-			(width 0.3)
-			(type default)
-		)
-		(layer "B.SilkS")
-		(uuid "0c2d5aa4-96dc-40b1-9415-a88e31a773bf")
+		(embedded_fonts no)
 	)
 	(gr_poly
 		(pts
@@ -31315,7 +29701,7 @@
 			(width 0.15)
 			(type solid)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.SilkS")
 		(uuid "22dc8635-e641-413e-b597-46a688f737ea")
 	)
@@ -31326,7 +29712,7 @@
 			(width 0.15)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.SilkS")
 		(uuid "3179eb86-eb93-4ef9-83a9-71dac44d016b")
 	)
@@ -31350,15 +29736,25 @@
 		(layer "F.SilkS")
 		(uuid "c5c3b3a3-84db-40d6-8311-a8bdb6959a52")
 	)
+	(gr_line
+		(start 214.3125 64.29375)
+		(end 234.95 64.29375)
+		(stroke
+			(width 0.3)
+			(type default)
+		)
+		(layer "B.SilkS")
+		(uuid "0c2d5aa4-96dc-40b1-9415-a88e31a773bf")
+	)
 	(gr_arc
 		(start 119.5875 26.4125)
 		(mid 120.202586 24.927586)
 		(end 121.6875 24.3125)
-		(locked yes)
 		(stroke
 			(width 0.2)
 			(type solid)
 		)
+		(locked yes)
 		(layer "Dwgs.User")
 		(uuid "21ea3398-e8e2-42a6-ab03-070774a8da9a")
 	)
@@ -31366,22 +29762,22 @@
 		(start 170.925 97.3625)
 		(mid 170.309914 98.847414)
 		(end 168.825 99.4625)
-		(locked yes)
 		(stroke
 			(width 0.2)
 			(type solid)
 		)
+		(locked yes)
 		(layer "Dwgs.User")
 		(uuid "40cb8bf7-4a16-4229-b7f4-cf91996b2056")
 	)
 	(gr_line
 		(start 168.825 24.3125)
 		(end 121.6875 24.3125)
-		(locked yes)
 		(stroke
 			(width 0.2)
 			(type solid)
 		)
+		(locked yes)
 		(layer "Dwgs.User")
 		(uuid "5970a980-0c4a-45fa-80d2-39a6fd67d192")
 	)
@@ -31399,11 +29795,11 @@
 	(gr_line
 		(start 119.5875 26.4125)
 		(end 119.5875 97.3625)
-		(locked yes)
 		(stroke
 			(width 0.2)
 			(type solid)
 		)
+		(locked yes)
 		(layer "Dwgs.User")
 		(uuid "630fb79e-b1b9-4989-917d-52623909a4e4")
 	)
@@ -31411,33 +29807,33 @@
 		(start 168.825 24.3125)
 		(mid 170.309949 24.927551)
 		(end 170.925 26.4125)
-		(locked yes)
 		(stroke
 			(width 0.2)
 			(type solid)
 		)
+		(locked yes)
 		(layer "Dwgs.User")
 		(uuid "6cd5446f-7c83-4b6a-a497-b67db138aed2")
 	)
 	(gr_line
 		(start 170.925 97.3625)
 		(end 170.925 26.4125)
-		(locked yes)
 		(stroke
 			(width 0.2)
 			(type solid)
 		)
+		(locked yes)
 		(layer "Dwgs.User")
 		(uuid "7503b360-d325-4930-b697-31d516ae1184")
 	)
 	(gr_line
 		(start 121.6875 99.4625)
 		(end 168.825 99.4625)
-		(locked yes)
 		(stroke
 			(width 0.2)
 			(type solid)
 		)
+		(locked yes)
 		(layer "Dwgs.User")
 		(uuid "96354e4c-7d4f-4a44-8666-7f14f8ed02a7")
 	)
@@ -31476,11 +29872,11 @@
 		(start 121.6875 99.4625)
 		(mid 120.202551 98.847449)
 		(end 119.5875 97.3625)
-		(locked yes)
 		(stroke
 			(width 0.2)
 			(type solid)
 		)
+		(locked yes)
 		(layer "Dwgs.User")
 		(uuid "efcd1563-9745-48e8-8022-a38276164aec")
 	)
@@ -31518,12 +29914,12 @@
 	(gr_circle
 		(center 167.6278 95.9235)
 		(end 168.7278 95.9235)
-		(locked yes)
 		(stroke
 			(width 0.2)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
+		(locked yes)
 		(layer "Edge.Cuts")
 		(uuid "3c8cc3dd-27c6-45e4-a318-a616f66d5b2f")
 	)
@@ -31552,12 +29948,12 @@
 	(gr_circle
 		(center 123.1143 95.9235)
 		(end 124.2143 95.9235)
-		(locked yes)
 		(stroke
 			(width 0.2)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
+		(locked yes)
 		(layer "Edge.Cuts")
 		(uuid "7db901d9-3135-42a4-9d31-93c2f365c38b")
 	)
@@ -31584,12 +29980,12 @@
 	(gr_circle
 		(center 123.1397 28.6135)
 		(end 124.2397 28.6135)
-		(locked yes)
 		(stroke
 			(width 0.2)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
+		(locked yes)
 		(layer "Edge.Cuts")
 		(uuid "ccc7a484-612f-4082-915a-7d2b8dd05347")
 	)
@@ -31607,182 +30003,14 @@
 	(gr_circle
 		(center 167.568 28.6135)
 		(end 168.668 28.6135)
-		(locked yes)
 		(stroke
 			(width 0.2)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
+		(locked yes)
 		(layer "Edge.Cuts")
 		(uuid "fd237490-c6a5-4a4b-854d-aba9949efd23")
-	)
-	(gr_text "3U"
-		(at 90.4875 87.3125 0)
-		(layer "B.SilkS")
-		(uuid "0e60a282-db86-473f-adef-b51ac3c31b39")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-			(justify mirror)
-		)
-	)
-	(gr_text "2U"
-		(at 100.0125 93.6625 0)
-		(layer "B.SilkS")
-		(uuid "11126ccf-cbcd-4979-affa-6a3a96d9bdeb")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-			(justify mirror)
-		)
-	)
-	(gr_text "1U"
-		(at 109.5375 93.6625 0)
-		(layer "B.SilkS")
-		(uuid "20ba0cff-8cfd-4af2-8c19-3bd2f8894c7b")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-			(justify mirror)
-		)
-	)
-	(gr_text "1U"
-		(at 180.975 93.6625 0)
-		(layer "B.SilkS")
-		(uuid "2228abe2-68d6-4a73-813f-e7adf8bb04ef")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-			(justify mirror)
-		)
-	)
-	(gr_text "layout by Squash"
-		(at 34.925 95.25 0)
-		(layer "B.SilkS")
-		(uuid "2306b0dc-74e3-47a2-bf50-5922fb9561e1")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-			(justify mirror)
-		)
-	)
-	(gr_text "USB\nhere"
-		(at 236.849612 25.673562 0)
-		(layer "B.SilkS")
-		(uuid "7f8b6f42-7310-4d00-bb9d-e2ea4859e030")
-		(effects
-			(font
-				(size 0.75 0.75)
-				(thickness 0.125)
-				(bold yes)
-			)
-			(justify mirror)
-		)
-	)
-	(gr_text "2U"
-		(at 190.5 93.6625 0)
-		(layer "B.SilkS")
-		(uuid "856d2593-acde-4d66-83dc-d8e349dc3579")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-			(justify mirror)
-		)
-	)
-	(gr_text "1U"
-		(at 90.4875 93.6625 0)
-		(layer "B.SilkS")
-		(uuid "8f350a78-fb4e-4108-ab6b-ca31245b2bed")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-			(justify mirror)
-		)
-	)
-	(gr_text "pcb by calvin0563\n"
-		(at 34.925 97.63125 0)
-		(layer "B.SilkS")
-		(uuid "925ce742-2525-4077-be8a-32efd1d5f0f9")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-			(justify mirror)
-		)
-	)
-	(gr_text "1U"
-		(at 219.075 93.6625 0)
-		(layer "B.SilkS")
-		(uuid "a2e61d42-b414-4172-82ac-10a42cdf35e6")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-			(justify mirror)
-		)
-	)
-	(gr_text "1U"
-		(at 200.025 93.6625 0)
-		(layer "B.SilkS")
-		(uuid "b0181e5e-9698-4716-a10f-7ed31f2976a1")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-			(justify mirror)
-		)
-	)
-	(gr_text "3U"
-		(at 200.024999 87.454823 0)
-		(layer "B.SilkS")
-		(uuid "c8fab730-2e47-47c8-b147-fdd535ee07c8")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-			(justify mirror)
-		)
-	)
-	(gr_text "JLCJLCJLCJLC"
-		(at 259.55625 97.63125 0)
-		(layer "B.SilkS")
-		(uuid "ce3bdd63-724d-480d-952e-b89dce7b3122")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(gr_text "1U"
-		(at 71.4375 93.6625 0)
-		(layer "B.SilkS")
-		(uuid "ce4b5777-c5be-4e65-84a3-bec71792927c")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-			(justify mirror)
-		)
 	)
 	(gr_text "5k1"
 		(at 139.294211 84.621946 0)
@@ -32197,6 +30425,174 @@
 				(size 0.8 0.8)
 				(thickness 0.125)
 			)
+		)
+	)
+	(gr_text "3U"
+		(at 90.4875 87.3125 0)
+		(layer "B.SilkS")
+		(uuid "0e60a282-db86-473f-adef-b51ac3c31b39")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "2U"
+		(at 100.0125 93.6625 0)
+		(layer "B.SilkS")
+		(uuid "11126ccf-cbcd-4979-affa-6a3a96d9bdeb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "1U"
+		(at 109.5375 93.6625 0)
+		(layer "B.SilkS")
+		(uuid "20ba0cff-8cfd-4af2-8c19-3bd2f8894c7b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "1U"
+		(at 180.975 93.6625 0)
+		(layer "B.SilkS")
+		(uuid "2228abe2-68d6-4a73-813f-e7adf8bb04ef")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "layout by Squash"
+		(at 34.925 95.25 0)
+		(layer "B.SilkS")
+		(uuid "2306b0dc-74e3-47a2-bf50-5922fb9561e1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "USB\nhere"
+		(at 236.849612 25.673562 0)
+		(layer "B.SilkS")
+		(uuid "7f8b6f42-7310-4d00-bb9d-e2ea4859e030")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.125)
+				(bold yes)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "2U"
+		(at 190.5 93.6625 0)
+		(layer "B.SilkS")
+		(uuid "856d2593-acde-4d66-83dc-d8e349dc3579")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "1U"
+		(at 90.4875 93.6625 0)
+		(layer "B.SilkS")
+		(uuid "8f350a78-fb4e-4108-ab6b-ca31245b2bed")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "pcb by calvin0563\n"
+		(at 34.925 97.63125 0)
+		(layer "B.SilkS")
+		(uuid "925ce742-2525-4077-be8a-32efd1d5f0f9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "1U"
+		(at 219.075 93.6625 0)
+		(layer "B.SilkS")
+		(uuid "a2e61d42-b414-4172-82ac-10a42cdf35e6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "1U"
+		(at 200.025 93.6625 0)
+		(layer "B.SilkS")
+		(uuid "b0181e5e-9698-4716-a10f-7ed31f2976a1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "3U"
+		(at 200.024999 87.454823 0)
+		(layer "B.SilkS")
+		(uuid "c8fab730-2e47-47c8-b147-fdd535ee07c8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "JLCJLCJLCJLC"
+		(at 259.55625 97.63125 0)
+		(layer "B.SilkS")
+		(uuid "ce3bdd63-724d-480d-952e-b89dce7b3122")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "1U"
+		(at 71.4375 93.6625 0)
+		(layer "B.SilkS")
+		(uuid "ce4b5777-c5be-4e65-84a3-bec71792927c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify mirror)
 		)
 	)
 	(segment
@@ -38960,7 +37356,7 @@
 	(zone
 		(net 42)
 		(net_name "GND")
-		(layers "F&B.Cu")
+		(layers "F.Cu" "B.Cu")
 		(uuid "850a0466-7d99-4581-b0d9-3f3b3c9f3e87")
 		(hatch edge 0.5)
 		(connect_pads
@@ -56657,4 +55053,5 @@
 			"efcd1563-9745-48e8-8022-a38276164aec" "fd237490-c6a5-4a4b-854d-aba9949efd23"
 		)
 	)
+	(embedded_fonts no)
 )

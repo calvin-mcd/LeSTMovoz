@@ -3,8 +3,9 @@
 The LeSTMovoz is drop-in DIY replacement pcb for the [Lesovoz](https://trashman.wiki/community/pcbs/lesovoz) pcb by squash for [minivan](https://trashman.wiki/) style cases.
 The replacement pcb adds a second 2u bottom row option by omitting one tray mount hole. [Existing plates](https://www.minivanplate.xyz/) should work but said 2u option is not accounted for in original plates.  
 
-It uses mostly THT components to be added by hand, but production files exist to handle the few SMD components (STM32 mcu, logic shifter for rgb, 2 press buttons) with factory assembly.
-The most difficult part to solder by hand should be the USB port.
+It uses mostly THT components to be added by hand, but production files exist to handle the few SMD components (STM32 mcu, logic shifter for rgb, usb port) with factory assembly.
+
+Vial Firmware was created by JLW and can be found here: https://github.com/josh-l-wang/vial-qmk/tree/main-vial/keyboards/jlw/lestmovoz
 
 ## Layout
 
@@ -16,15 +17,12 @@ The most difficult part to solder by hand should be the USB port.
 
 ## Todo
 
-- [ ] order & test pcb
-- [ ] create firmware
-- [ ] update plate options on https://www.minivanplate.xyz/
-- [ ] test in different cases, with acrylic cover from the OG lesovoz
-- [ ] add full list for components and make a basic build guide
+- [x] order & test pcb Rev 2
+- [x] create firmware
 
 ## Disclaimer
 
-Please note that this project is a work in progress with no guarantees of a working outcome. No-one involved in this project is responsible for any usage issues that may arise. However, feel free to edit, modify and otherwise utilise these files.
+This PCB has been fully tested and is confirmed to work. However, no-one involved in this project is responsible for any usage issues that may arise. Order at your own risk. Feel free to edit, modify and otherwise utilise these files.
 
 ## License
 
@@ -32,9 +30,9 @@ This project is released under the GPL v3 License. Please refer to the LICENCE f
 
 ## Credits
 
-Big thanks for 
+Big thanks to JLW for supporting and making this project possible and to Kenny for getting it out there to people.
 
-And, as always big thanks to the 40s community!
+And as always big thanks to the 40s community!
 
 Any questions, contact calvin0563 on Discord. 
 
